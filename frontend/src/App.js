@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import Navbar from './components/navbar'
+import './styles/scroll-bar.css';
 
 function App() {
   return (

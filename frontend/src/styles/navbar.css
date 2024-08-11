@@ -1,33 +1,32 @@
-/* navbar.css */
 
 nav {
-    background-color: #f2f2f2;
+    background-color: #ffffffad;
     padding: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px black;
 }
 
 .navbar-logo {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
+    width: 15%;
+    object-fit: contain;
     border: none;
     background: transparent;
+    padding-left: 2em;
 }
 .navbar-list {
     list-style-type: none;
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     margin: 0;
-    padding: 0;
+    padding: 1em;
     padding-right: 2em;
 }
 .navbar-list-item {
     text-transform: uppercase;
     font-size: 1rem;
-    padding: 2px;
+    padding: 3px;
     font-weight: 500;
 }
 
@@ -36,25 +35,12 @@ nav {
     color: #fff;
     transition: color 0.3s ease;
     color: black;
-
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .navbar-link:hover {
-    color: #9f9b9b; /* Hover rengi */
-}
-
-.navbar-list-item::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #9f9b9b; /* Alt çizgi hover rengi */
-    transition: width 0.3s;
-    margin-top: 5px;
-    cursor: pointer;
-}
-
-.navbar-list-item:hover::after {
-    width: 100%;
+    color: #b53f3f; 
+    text-shadow:1px solid #b53f3f;
 }
 
