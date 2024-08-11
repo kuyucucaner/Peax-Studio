@@ -1,0 +1,60 @@
+/* navbar.css */
+
+nav {
+    background-color: #f2f2f2;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: none;
+    background: transparent;
+}
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    padding-right: 2em;
+}
+.navbar-list-item {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 2px;
+    font-weight: 500;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    color: black;
+
+}
+
+.navbar-link:hover {
+    color: #9f9b9b; /* Hover rengi */
+}
+
+.navbar-list-item::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #9f9b9b; /* Alt çizgi hover rengi */
+    transition: width 0.3s;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.navbar-list-item:hover::after {
+    width: 100%;
+}
+
