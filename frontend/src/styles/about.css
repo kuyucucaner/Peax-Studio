@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+}
+.about-box{
+    display: flex;
+    flex-direction: row;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 2em;
+}
+.about-image{
+    width: 50%;
+    height: 80vh;
+    max-width: 1600px;
+    border-radius: 5px;
+    border: none;
+    object-fit: cover;
+    box-shadow: 0px 2px 5px #000000;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+.about-title{
+    font-size: 32px;
+    border-bottom: 1px solid #aaaaaa50;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px #00000070;
+    color: #333;
+    text-align: center;
+}
+.about-description{
+    font-size: 20px;
+    line-height: 1.8;    
+    text-shadow: 0px 1px 2px #00000030;
+    color: #333;
+}
+.about-achievements{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 1.5em;
+}
+.about-subtitle{
+    font-size: 32px;
+    border-bottom: 1px solid #aaaaaa50;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px #00000070;
+    color: #333;
+    text-align: start;
+}
+.about-employee{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.about-employee-title{
+    text-align: center;
+    font-size:32px;    
+    border-bottom: 1px solid #aaaaaa50;
+    text-transform: uppercase;
+    width: 20%;
+    margin: auto;
+    color: #333;
+}
+.about-employee-section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-employee-card{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    box-shadow: 0px 2px 6px #00000040;
+    border-radius: 5px;
+    padding: 20px;
+}
+.about-employee-photo{
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 400px;
+}
+.about-employee-name{
+    text-align: center;
+    font-size: 26px;
+    text-shadow: 0px 1px 1px #00000030;
+    color: #333;
+}
+.about-employee-job{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    color: #5a5a5a;
+    text-shadow: 0px 1px 1px #aaaaaa50;
+
+}
+
