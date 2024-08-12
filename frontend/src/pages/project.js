@@ -24,7 +24,7 @@ const Home = () => {
               project, highlighting key features and outcomes. Brief description
               of the project, highlighting key features and outcomes.
             </p>
-            <Link href="#" className="project-link">
+            <Link to="#" className="project-link">
               View Project
             </Link>
           </div>
@@ -46,7 +46,7 @@ const Home = () => {
               project, highlighting key features and outcomes. Brief description
               of the project, highlighting key features and outcomes.
             </p>
-            <Link href="#" className="project-link">
+            <Link to="#" className="project-link">
               View Project
             </Link>
           </div>
