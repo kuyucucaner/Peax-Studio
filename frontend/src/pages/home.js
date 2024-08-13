@@ -21,7 +21,8 @@ const Home = () => {
           <button className='home-section-button' onClick={handleButtonClick}>
             Check Our Projects
           </button>
-          <h6 className='home-section-text'>We're the best mdfker trio ever on world!</h6>
+          <h6 className='home-section-text'>
+          Contact us for your dirty work</h6>
         </div>
       </div>
     </div>
