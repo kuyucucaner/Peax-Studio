@@ -2,9 +2,9 @@ import React from "react";
 import "../styles/project.css";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Project = () => {
   return (
-    <main className="project-container">
+    <section className="project-container" id="project-container">
       <h1 className="project-title">Projects</h1>
 
       <div className="project-section">
@@ -52,8 +52,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
-export default Home;
+export default Project;

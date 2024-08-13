@@ -8,18 +8,17 @@ import './styles/scroll-bar.css';
 
 function App() {
   return (
-    <Router> 
+    <Router>
       <div>
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-
           </Routes>
+          <About /> 
+          <Project />
+          <Contact />
         </main>
       </div>
-      <About/>
-      <Project/>
-      <Contact/>
     </Router>
   );
 }
