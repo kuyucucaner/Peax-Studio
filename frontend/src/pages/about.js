@@ -32,36 +32,23 @@ const About = () => {
           </div>
         </div>
         <div className="about-achievements">
-          <h2 className="about-subtitle">Mission</h2>
-          <p className="about-description">
-            Our mission is to deliver innovative and efficient solutions that
-            not only meet but exceed our clients' expectations. We strive to
-            provide exceptional service by combining creative ideas with
-            cutting-edge technology, ensuring that every project we undertake is
-            a success. We are committed to fostering long-term relationships
-            with our clients, built on trust, integrity, and mutual respect.
-          </p>
+    <h2 className="about-subtitle">What Drives Us</h2>
+    <p className="about-description">
+        Our mission is to deliver innovative, efficient solutions that go beyond merely meeting client expectations. We are driven by a commitment to excellence, seeking to transform challenges into opportunities through creative vision and the latest technological advancements. Each project we undertake is an opportunity to set a new standard of success, where our dedication to quality and detail shines through. At the heart of our mission is the belief in building lasting relationships with our clients, founded on the principles of trust, integrity, and mutual respect. We view every client interaction as a chance to deepen these values and create solutions that truly resonate.
+    </p>
 
-          <h2 className="about-subtitle">Vision</h2>
-          <p className="about-description">
-            Our vision is to be recognized as a leader in the creative design
-            and development industry. We aim to set new standards in innovation
-            and quality, consistently pushing the boundaries of what's possible.
-            By staying ahead of industry trends and embracing new technologies,
-            we aspire to create digital solutions that make a lasting impact on
-            businesses and their audiences.
-          </p>
+    <h2 className="about-subtitle">What We Aspire to Achieve</h2>
+    <p className="about-description">
+        Our vision is to be recognized as a trailblazer in the creative design and development industry. We aim to lead by example, setting new benchmarks in innovation and quality that others aspire to follow. In a rapidly evolving digital landscape, we strive to stay ahead of the curve by continuously embracing emerging trends and technologies. Our goal is not just to keep pace with industry changes but to shape the future of digital solutions. By crafting experiences that leave a lasting impact, we aspire to influence not only the businesses we work with but also the broader audiences they engage with. Our vision is a world where our work enhances the way people connect, communicate, and create.
+    </p>
 
-          <h2 className="about-subtitle">Goals</h2>
-          <p className="about-description">
-            Our goals include continuous improvement in our processes and
-            services, expanding our global reach, and enhancing our team's
-            expertise. We are dedicated to achieving sustainable growth by
-            focusing on client satisfaction, innovation, and excellence in
-            everything we do. By setting clear and measurable objectives, we
-            ensure that Peax Studio remains at the forefront of the industry.
-          </p>
-        </div>
+    <h2 className="about-subtitle">How We Plan to Succeed</h2>
+    <p className="about-description">
+        Our goals are ambitious yet grounded in a clear strategy focused on continuous improvement, global expansion, and enhancing the expertise of our team. We are committed to sustainable growth by placing client satisfaction at the forefront of our endeavors. Innovation is at the core of our success, and we constantly seek new ways to push the boundaries of what’s possible. By investing in our team’s development and staying adaptable to change, we ensure that our skills and knowledge evolve alongside the industry. We set clear, measurable objectives to track our progress, ensuring that Peax Studio remains a leader in delivering top-tier digital solutions. Through a combination of strategic planning and relentless pursuit of excellence, we aim to not just meet but exceed the expectations of our clients and the industry as a whole.
+    </p>
+</div>
+
+
         <div className="about-employee">
           <h1 className="about-employee-title">Who we are</h1>
           <div className="about-employee-section">
@@ -71,8 +58,25 @@ const About = () => {
                 alt="about-employee-photo"
                 className="about-employee-photo"
               />
-              <h3 className="about-employee-name">Müfit ŞAKIR</h3>
-              <h5 className="about-employee-job">Web Developer</h5>
+              <div className="about-employee-box">
+                <h3 className="about-employee-name">Müfit ŞAKIR</h3>
+                <h5 className="about-employee-job">Web Developer</h5>
+                <p className="about-employee-information">
+                  Ben, farklı alanlarda uzmanlaşmış, yaratıcı çözümler sunabilen
+                  ve projelerde yüksek performans gösteren bir profesyonelim.
+                  Teknoloji, tasarım ve yönetim gibi çeşitli disiplinlerde
+                  derinlemesine bilgi sahibiyim. Takım çalışmasına yatkın,
+                  iletişim becerileri güçlü ve yeniliklere açık biriyim. Her
+                  zaman en iyisini hedefler, zorluklarla başa çıkmada etkili
+                  stratejiler geliştirir ve süreçlerin iyileştirilmesine katkıda
+                  bulunurum. Benimle çalışanlar, projelerinde fark yaratan bir
+                  destek alır ve her adımda güvenilir bir iş ortağı bulur.{" "}
+                </p>
+                <div className="about-employee-social">
+                  <button className="about-employee-button">LinkedIn</button>
+                  <button className="about-employee-button">Github</button>
+                </div>
+              </div>
             </div>
             <div className="about-employee-card">
               <img
@@ -80,8 +84,25 @@ const About = () => {
                 alt="about-employee-photo"
                 className="about-employee-photo"
               />
-              <h3 className="about-employee-name">Caner KUYUCU</h3>
-              <h5 className="about-employee-job">Full Stack Developer</h5>
+              <div className="about-employee-box">
+                <h3 className="about-employee-name">Caner KUYUCU</h3>
+                <h5 className="about-employee-job">Full Stack Developer</h5>
+                <p className="about-employee-information">
+                  Ben, farklı alanlarda uzmanlaşmış, yaratıcı çözümler sunabilen
+                  ve projelerde yüksek performans gösteren bir profesyonelim.
+                  Teknoloji, tasarım ve yönetim gibi çeşitli disiplinlerde
+                  derinlemesine bilgi sahibiyim. Takım çalışmasına yatkın,
+                  iletişim becerileri güçlü ve yeniliklere açık biriyim. Her
+                  zaman en iyisini hedefler, zorluklarla başa çıkmada etkili
+                  stratejiler geliştirir ve süreçlerin iyileştirilmesine katkıda
+                  bulunurum. Benimle çalışanlar, projelerinde fark yaratan bir
+                  destek alır ve her adımda güvenilir bir iş ortağı bulur.
+                </p>
+                <div className="about-employee-social">
+                  <button className="about-employee-button">LinkedIn</button>
+                  <button className="about-employee-button">Github</button>
+                </div>
+              </div>
             </div>
             <div className="about-employee-card">
               <img
@@ -89,8 +110,25 @@ const About = () => {
                 alt="about-employee-photo"
                 className="about-employee-photo"
               />
-              <h3 className="about-employee-name">Dağhan YAZGAN</h3>
-              <h5 className="about-employee-job">Mobile Developer</h5>
+              <div className="about-employee-box">
+                <h3 className="about-employee-name">Dağhan YAZGAN</h3>
+                <h5 className="about-employee-job">Mobile Developer</h5>
+                <p className="about-employee-information">
+                  Ben, farklı alanlarda uzmanlaşmış, yaratıcı çözümler sunabilen
+                  ve projelerde yüksek performans gösteren bir profesyonelim.
+                  Teknoloji, tasarım ve yönetim gibi çeşitli disiplinlerde
+                  derinlemesine bilgi sahibiyim. Takım çalışmasına yatkın,
+                  iletişim becerileri güçlü ve yeniliklere açık biriyim. Her
+                  zaman en iyisini hedefler, zorluklarla başa çıkmada etkili
+                  stratejiler geliştirir ve süreçlerin iyileştirilmesine katkıda
+                  bulunurum. Benimle çalışanlar, projelerinde fark yaratan bir
+                  destek alır ve her adımda güvenilir bir iş ortağı bulur.{" "}
+                </p>
+                <div className="about-employee-social">
+                  <button className="about-employee-button">LinkedIn</button>
+                  <button className="about-employee-button">Github</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

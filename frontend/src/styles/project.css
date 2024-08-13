@@ -1,11 +1,4 @@
 /* Temel Ayarlar */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
 
 /* Animasyonlar */
 @keyframes fadeIn {
@@ -27,16 +20,17 @@ body {
 .project-container{
     display: flex;
     flex-direction: column;
-    margin-top:2em;
+    padding-top: 3em;
+    background:linear-gradient(to bottom, #6b6b6b ,#585858);
     animation: fadeIn 1s ease-in-out;
 }
 
 .project-title{
     font-size: 42px;
-    color: #333;
-    text-shadow: 0px 1px 3px #00000040;
+    color: #f1f1f1;
+    text-shadow: 0px 1px 3px #f5f5f540;
     text-align: center;
-    border-bottom: 1px solid #aaaaaa50;
+    border-bottom: 1px solid #eeeeee50;
     width: 30%;
     margin: auto;
     text-transform: uppercase;
@@ -50,11 +44,12 @@ body {
     margin-top: 5em;
     margin-bottom:5em;
     animation: fadeIn 1s ease-in-out;
+    
 }
 
 .project-card {
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 16px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     cursor: pointer;
@@ -65,14 +60,10 @@ body {
     margin-bottom: 4em;
     width:  90%;
     min-width: 500px;
+    background-color: #515151;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    animation: slideIn 1s ease-in-out;
 }
 
-.project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-}
 
 .project-image {
     width:50%;
@@ -80,7 +71,7 @@ body {
     object-fit: contain;
     padding: 30px;
     border: none;
-    border-radius: 15px;
+    border-radius: 40px;
     animation: zoomIn 1.5s ease-in-out;
 }
 
@@ -93,8 +84,8 @@ body {
     font-size: 1.5em;
     margin: 0;
     text-transform: uppercase;
-    color: #333;
-    border-bottom: 2px solid #f4f4f4;
+    color: #f1f1f1;
+    border-bottom: 2px solid #f4f4f4c0;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
     animation: fadeIn 1.5s ease-in-out;
@@ -103,20 +94,21 @@ body {
 .project-description {
     font-size: 1em;
     line-height: 1.6;
-    color: #666;
+    color: #e8e8e8;
     animation: fadeIn 1.5s ease-in-out;
 }
 
 .project-link {
-    display: inline-block;
     margin-top: 1em;
     text-decoration: none;
-    color: #007BFF;
+    color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
     animation: fadeIn 1.5s ease-in-out;
+    float: right;
 }
 
 .project-link:hover {
     text-decoration: underline;
+    transform: scale(1.05);
 }

@@ -5,24 +5,24 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
  
-    <main class="contact-container">
-        <section class="contact-info">
-            <h2 class="contact-title">Our Contact Information</h2>
-            <p class="contact-description">
+    <main className="contact-container">
+        <section className="contact-info">
+            <h2 className="contact-title">Our Contact Information</h2>
+            <p className="contact-description">
                 We are always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Reach out to us through the following platforms:
             </p>
-            <div class="contact-details">
-                <div class="contact-item">
-                    <h3 class="contact-label">Email:</h3>
-                    <p><Link to="mailto:peaxstudio@gmail.com">peaxstudio@gmail.com</Link></p>
+            <div className="contact-details">
+                <div className="contact-item">
+                    <h3 className="contact-label">Email: </h3>
+                    <p className='contact-link'> <Link className='contact-href'to="mailto:peaxstudio@gmail.com">peaxstudio@gmail.com</Link></p>
                 </div>
-                <div class="contact-item">
-                    <h3 class="contact-label">LinkedIn:</h3>
-                    <p><Link to="https://www.linkedin.com/in/caner-kuyucu" target="_blank">linkedin.com/in/caner-kuyucu</Link></p>
+                <div className="contact-item">
+                    <h3 className="contact-label">LinkedIn: </h3>
+                    <p className='contact-link'><Link className='contact-href'to="https://www.linkedin.com/in/caner-kuyucu" target="_blank">linkedin.com/in/caner-kuyucu</Link></p>
                 </div>
-                <div class="contact-item">
-                    <h3 class="contact-label">GitHub:</h3>
-                    <p><Link to="https://github.com/kuyucucaner" target="_blank">github.com/kuyucucaner</Link></p>
+                <div className="contact-item">
+                    <h3 className="contact-label">GitHub: </h3>
+                    <p className='contact-link'><Link className='contact-href' to="https://github.com/kuyucucaner" target="_blank">github.com/kuyucucaner</Link></p>
                 </div>
             </div>
         </section>
