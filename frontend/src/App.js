@@ -4,6 +4,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Project from './pages/project'
+import Portfolio from './pages/portfolio'
 import './styles/scroll-bar.css';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
-          <About /> 
+          <About />      
+          <Portfolio /> 
           <Project />
           <Contact />
         </main>
