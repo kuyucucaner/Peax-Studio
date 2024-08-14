@@ -1,33 +1,57 @@
-import React from 'react';
-import '../styles/contact.css';
+import React from "react";
+import "../styles/contact.css";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
- 
-    <main className="contact-container" id='contact-container'>
-        <section className="contact-info">
-            <h2 className="contact-title">Our Contact Information</h2>
-            <p className="contact-description">
-                We are always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Reach out to us through the following platforms:
-            </p>
-            <div className="contact-details">
-                <div className="contact-item">
-                    <h3 className="contact-label">Email: </h3>
-                    <p className='contact-link'> <Link className='contact-href'to="mailto:peaxstudio@gmail.com">peaxstudio@gmail.com</Link></p>
-                </div>
-                <div className="contact-item">
-                    <h3 className="contact-label">LinkedIn: </h3>
-                    <p className='contact-link'><Link className='contact-href'to="https://www.linkedin.com/in/caner-kuyucu" target="_blank">linkedin.com/in/peaxstudio</Link></p>
-                </div>
-                <div className="contact-item">
-                    <h3 className="contact-label">GitHub: </h3>
-                    <p className='contact-link'><Link className='contact-href' to="https://github.com/kuyucucaner" target="_blank">github.com/peaxstudio</Link></p>
-                </div>
-            </div>
-        </section>
-    </main>
-
+    <section className="contact-section" id="contact-section">
+      <h2 className="contact-heading">Contact Us</h2>
+      <p className="contact-text">
+        We are always open to discussing new projects, creative ideas, or
+        opportunities to be part of your vision. Reach out to us through the
+        following platforms:
+      </p>
+      <div className="contact-info">
+        <div className="contact-info-item">
+          <h3 className="contact-label">Email:</h3>
+          <p className="contact-link">
+            <Link
+              className="contact-anchor"
+              aria-label="Email Peax Studio"
+              to="mailto:peaxstudio@gmail.com"
+            >
+              peaxstudio@gmail.com
+            </Link>
+          </p>
+        </div>
+        <div className="contact-info-item">
+          <h3 className="contact-label">LinkedIn:</h3>
+          <p className="contact-link">
+            <Link
+              className="contact-anchor"
+              to="https://www.linkedin.com/in/caner-kuyucu"
+              target="_blank"
+              aria-label="Peax Studio LinkedIn Profile"
+            >
+              linkedin.com/in/peaxstudio
+            </Link>
+          </p>
+        </div>
+        <div className="contact-info-item">
+          <h3 className="contact-label">GitHub:</h3>
+          <p className="contact-link">
+            <Link
+              className="contact-anchor"
+              to="https://github.com/kuyucucaner"
+              target="_blank"
+              aria-label="Peax Studio GitHub Profile"
+            >
+              github.com/peaxstudio
+            </Link>
+          </p>
+        </div>
+      </div>
+    </section>
   );
 };
 

@@ -1,98 +1,89 @@
-
-.about-employee{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    animation: fadeIn 1.2s ease-in-out;
-
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  animation: fadeIn 1.2s ease-in-out;
 }
-.about-employee-title{
-    text-align: center;
-    font-size:32px;    
-    border-bottom: 1px solid #eeeeee50;
-    text-transform: uppercase;
-    width: 20%;
-    margin: auto;
-    color: #f1f1f1;
-    text-shadow: 0px 1px 2px #ffffff;
-    animation: fadeIn 1.2s ease-in-out;
-
+.portfolio-title {
+  text-align: center;
+  font-size: 32px;
+  border-bottom: 1px solid #eeeeee50;
+  text-transform: uppercase;
+  width: 20%;
+  margin: auto;
+  color: #f1f1f1;
+  text-shadow: 0px 1px 2px #ffffff;
+  animation: fadeIn 1.2s ease-in-out;
 }
-.about-employee-section{
-    display: flex;
-    flex-direction: column;
-    margin-top: 3em;
-    align-items: center;
-
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  align-items: center;
 }
-.about-employee-card{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    box-shadow: 0px 2px 6px #ffffff40;
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 2em;
-    background-color: #515151;
+.portfolio-card {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  box-shadow: 0px 2px 6px #ffffff40;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 2em;
+  background-color: #515151;
 }
-.about-employee-box{
-    display: flex;
-    flex-direction: column;
-    padding-left: 4em;
-
+.portfolio-box {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4em;
 }
-.about-employee-photo{
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    max-height: 400px;
-    animation: zoomIn 1.5s ease-in-out;
-    border-radius: 8px;
-
+.portfolio-photo {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 400px;
+  animation: zoomIn 1.5s ease-in-out;
+  border-radius: 8px;
 }
-.about-employee-name{
-    font-size: 26px;
-    text-shadow: 0px 1px 1px #ffffff40;
-    color: #f1f1f1;
-    animation: fadeIn 1.8s ease-in-out;
-    border-bottom: 1px solid #ffffff40;
-    width: 25%;
-
+.portfolio-name {
+  font-size: 26px;
+  text-shadow: 0px 1px 1px #ffffff40;
+  color: #f1f1f1;
+  animation: fadeIn 1.8s ease-in-out;
+  border-bottom: 1px solid #ffffff40;
+  width: 25%;
 }
-.about-employee-job{
-    font-size: 20px;
-    margin-top: 0;
-    color: #ffffff;
-    text-shadow: 0px 1px 1px #eeeeee50;
-    animation: fadeIn 1.8s ease-in-out;
-
+.portfolio-job {
+  font-size: 20px;
+  margin-top: 0;
+  color: #ffffff;
+  text-shadow: 0px 1px 1px #eeeeee50;
+  animation: fadeIn 1.8s ease-in-out;
 }
-.about-employee-information{
-    color: #d4d4d4;
-    font-size: 16px;
-    line-height: 1.6;
+.portfolio-information {
+  color: #d4d4d4;
+  font-size: 16px;
+  line-height: 1.6;
 }
-.about-employee-social{
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-top: auto;
+.portfolio-social {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-top: auto;
 }
-.about-employee-button{
-    border: none;
-    border-radius: 20px;
-    padding: 0.5em 3em;
-    color: #333;
-    text-shadow: 0 1px 2px #00000030;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: #f4f4f4;
-    margin-left: 2em;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-
+.portfolio-button {
+  border: none;
+  border-radius: 20px;
+  padding: 0.5em 3em;
+  color: #333;
+  text-shadow: 0 1px 2px #00000030;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  margin-left: 2em;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.about-employee-button:hover{
-    background-color: rgb(211, 211, 211);
-    transform: scale(1.04);
+.portfolio-button:hover {
+  background-color: rgb(211, 211, 211);
+  transform: scale(1.04);
 }

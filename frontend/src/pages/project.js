@@ -4,9 +4,8 @@ import { Link } from "react-router-dom";
 
 const Project = () => {
   return (
-    <section className="project-container" id="project-container">
-      <h1 className="project-title">Projects</h1>
-
+    <section className="project-section" id="project-section">
+      <h1 className="project-title">Our Projects</h1>
       <div className="project-section">
         <div className="project-card">
           <img
@@ -39,7 +38,7 @@ const Project = () => {
           <div className="project-content">
             <h2 className="project-subtitle">Project Title 2</h2>
             <p className="project-description">
-            Brief description of the project, highlighting key features and
+              Brief description of the project, highlighting key features and
               outcomes. Brief description of the project, highlighting key
               features and outcomes. Brief description of the project,
               highlighting key features and outcomes. Brief description of the

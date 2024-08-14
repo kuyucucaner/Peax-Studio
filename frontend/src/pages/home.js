@@ -5,28 +5,10 @@ import HomeImage from "../images/peaxstudio.svg";
 const Home = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
-  const scrollTimeoutRef = useRef(null); // Using useRef to store the timeout reference
+  const scrollTimeoutRef = useRef(null);
 
-  const handleProjectButtonClick = () => {
-    const section = document.getElementById("project-container");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const handleAboutButtonClick = () => {
-    const section = document.getElementById("about-container");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const handleContactButtonClick = () => {
-    const section = document.getElementById("contact-container");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const handlePortfolioButtonClick = () => {
-    const section = document.getElementById("portfolio-container");
+  const handleButtonClick = (sectionId) => {
+    const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -38,7 +20,7 @@ const Home = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      clearTimeout(scrollTimeoutRef.current); // Clearing the previous timeout
+      clearTimeout(scrollTimeoutRef.current);
       setIsScrolling(true);
       if (window.scrollY > window.innerHeight) {
         setShowScrollButton(true);
@@ -47,52 +29,68 @@ const Home = () => {
       }
 
       scrollTimeoutRef.current = setTimeout(() => {
-        // Storing the timeout reference in useRef
         setIsScrolling(false);
         setShowScrollButton(false);
-      }, 1000); // Adjust delay (in milliseconds) as needed
+      }, 2000); // Suggested delay of 2000ms
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      clearTimeout(scrollTimeoutRef.current); // Clearing the timeout on cleanup
+      clearTimeout(scrollTimeoutRef.current);
     };
   }, []);
 
   return (
     <div>
       <div className="home-button-container">
-        <button className="home-button" onClick={handleContactButtonClick}>
-          Contact
-        </button>
-        <button className="home-button" onClick={handleAboutButtonClick}>
+        <button
+          className="home-button"
+          onClick={() => handleButtonClick("about-section")}
+          aria-label="Scroll to About Section"
+        >
           About
         </button>
-        <img src={HomeImage} alt="home-image" className="home-image" />
-        <button className="home-button" onClick={handlePortfolioButtonClick}>
+        <button
+          className="home-button"
+          onClick={() => handleButtonClick("portfolio-container")}
+          aria-label="Scroll to Portfolio Section"
+        >
           Portfolio
         </button>
-        <button className="home-button" onClick={handleProjectButtonClick}>
+
+        <img src={HomeImage} alt="Home illustration" className="home-image" />
+        <button
+          className="home-button"
+          onClick={() => handleButtonClick("project-section")}
+          aria-label="Scroll to Projects Section"
+        >
           Projects
+        </button>
+        <button
+          className="home-button"
+          onClick={() => handleButtonClick("contact-section")}
+          aria-label="Scroll to Contact Section"
+        >
+          Contact
         </button>
       </div>
       <div className="home-container">
         <div className="home-section">
-          <h6 className="home-section-slogan">
-            Make best choice for your future!
-          </h6>
-          <h4 className="home-section-title">
+          <h3 className="home-section-slogan">
+            Make the best choice for your future!
+          </h3>
+          <h1 className="home-section-title">
             We create websites & mobile apps
-          </h4>
-          <h4 className="home-section-subtitle">loved around our friends</h4>
-          <h6 className="home-section-text">Contact us for your dirty work</h6>
-          <h6 className="home-section-text">Learn More About Us</h6>
+          </h1>
+          <h2 className="home-section-subtitle">loved around our friends</h2>
+          <p className="home-section-text">Contact us for your dirty work</p>
+          <p className="home-section-text">Learn More About Us</p>
         </div>
       </div>
 
       {showScrollButton && isScrolling && (
-        <button className="scroll-to-top-button" onClick={handleScrollToTop}>
+        <button className="scroll-to-top-button"  aria-label="Scroll to Top" onClick={handleScrollToTop}>
           ↑
         </button>
       )}
