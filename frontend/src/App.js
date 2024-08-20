@@ -5,6 +5,7 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Project from './pages/project'
 import Portfolio from './pages/portfolio'
+import Skill from './pages/skill'
 import './styles/scroll-bar.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <About />      
           <Portfolio /> 
           <Project />
+          <Skill />
           <Contact />
         </main>
       </div>

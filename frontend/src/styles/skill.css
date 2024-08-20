@@ -1,0 +1,55 @@
+.skill-section {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+    background: linear-gradient(to bottom, #5f5f5f, #6b6b6b);
+    overflow-x: hidden;
+  }
+.skill-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+}
+.skill-title{
+    text-align: center;
+    color:#f1f1f1;
+    border-bottom: 1px solid #eeeeee50;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 1px 2px #ffffff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.skill-icon-text{
+    text-align: center;
+    color:#f1f1f1;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 1px 2px #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 2em;
+}
+.skill-icon-box {
+    display: flex;
+    margin-top: 3em;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10em; /* Yatay boşluk */
+    row-gap: 2em; /* Dikey boşluk */
+}
+
+.skill-icon{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+.skill-icon:hover{
+    opacity: 1;
+}

@@ -49,7 +49,7 @@ const Home = () => {
           onClick={() => handleButtonClick("about-section")}
           aria-label="Scroll to About Section"
         >
-          About
+          About Us
         </button>
         <button
           className="home-button"
@@ -81,16 +81,22 @@ const Home = () => {
             Make the best choice for your future!
           </h3>
           <h1 className="home-section-title">
-            We create websites & mobile apps
+            We craft innovative websites & mobile apps
           </h1>
-          <h2 className="home-section-subtitle">loved around our friends</h2>
-          <p className="home-section-text">Contact us for your dirty work</p>
-          <p className="home-section-text">Learn More About Us</p>
+          <h2 className="home-section-subtitle">
+            Loved by users around the world
+          </h2>
+          <p className="home-section-text">Let us handle the hard work</p>
+          <p className="home-section-subtext">Learn More About Us</p>
         </div>
       </div>
 
       {showScrollButton && isScrolling && (
-        <button className="scroll-to-top-button"  aria-label="Scroll to Top" onClick={handleScrollToTop}>
+        <button
+          className="scroll-to-top-button"
+          aria-label="Scroll to Top"
+          onClick={handleScrollToTop}
+        >
           ↑
         </button>
       )}
