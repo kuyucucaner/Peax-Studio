@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "build": "cd frontend && npm run build && cp -r build ../backend/build",
     "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
     "start:frontend": "cd frontend && serve -s build",
     "start:backend": "cd backend && node server.js"
