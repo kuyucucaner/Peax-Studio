@@ -11,14 +11,18 @@ const Home = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.error(`Section with ID ${sectionId} not found.`);
     }
   };
+  
 
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   useEffect(() => {
+
     const handleScroll = () => {
       clearTimeout(scrollTimeoutRef.current);
       setIsScrolling(true);
@@ -42,7 +46,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <section className="home">
       <div className="home-button-container">
         <button
           className="home-button"
@@ -59,7 +63,11 @@ const Home = () => {
           Portfolio
         </button>
 
-        <img src={HomeImage} alt="Home illustration" className="home-image" />
+        <img
+          src={HomeImage}
+          alt="Peax Studio illustration"
+          className="home-image"
+        />
         <button
           className="home-button"
           onClick={() => handleButtonClick("project-section")}
@@ -87,7 +95,7 @@ const Home = () => {
             Loved by users around the world
           </h2>
           <p className="home-section-text">Let us handle the hard work</p>
-          <p className="home-section-subtext">Learn More About Us</p>
+          <p className="home-section-subtext">Learn More About Us...</p>
         </div>
       </div>
 
@@ -100,7 +108,7 @@ const Home = () => {
           ↑
         </button>
       )}
-    </div>
+    </section>
   );
 };
 
