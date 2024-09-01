@@ -14,12 +14,6 @@ app.use(cors());
 app.use(helmet());
 app.use(morgan('tiny'));
 
-// Frontend Build Dosyalarını Sunma
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-});
 
 // Port Ayarlama ve Sunucuyu Başlatma
 const PORT = process.env.PORT || 5000;
