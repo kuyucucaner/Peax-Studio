@@ -7,8 +7,7 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && npm run dev",
-    "client": "cd frontend && npm start",
-    "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
+    "client": "cd frontend && npm start"
   },
   "keywords": [],
   "author": "",
