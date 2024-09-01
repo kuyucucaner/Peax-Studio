@@ -14,10 +14,12 @@ app.use(cors());
 app.use(helmet());
 app.use(morgan('tiny'));
 
-app.use(express.static(path.join(__dirname, '../frontend/build')));
+// Statik dosyaları sunma
+app.use(express.static(path.join(__dirname, 'build')));
 
+// Diğer tüm istekler için index.html dosyasını sunma
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 // Port Ayarlama ve Sunucuyu Başlatma
 const PORT = process.env.PORT || 5000;
