@@ -1,2 +1,1 @@
-web: cd backend && node server.js
-frontend: cd frontend && serve -s build
+web: node backend/server.js
