@@ -21,6 +21,11 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Bir hata oluştu!');
+});
+
 // Port Ayarlama ve Sunucuyu Başlatma
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Sunucu ${PORT} portunda çalışıyor`));
