@@ -5,10 +5,9 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "serve -s frontend/build"
-    ,
-    "server": "cd backend && npm run dev",
-    "client": "cd frontend && npm start"
+"start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "cd frontend && serve -s build",
+    "start:backend": "cd backend && node server.js"
   },
   "keywords": [],
   "author": "",
