@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "serve -s build",
     "server": "cd backend && npm run dev",
     "client": "cd frontend && npm start"
   },
@@ -23,7 +23,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.2",
     "morgan": "^1.10.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "serve": "^14.2.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
