@@ -5,10 +5,10 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
-    "start:frontend": "cd frontend && serve -s build",
-    "start:backend": "cd backend && node server.js",
-    "heroku-postbuild": "cd frontend && npm install && npm run build"
+  "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+  "start:frontend": "cd frontend && serve -s build",
+  "start:backend": "cd backend && node server.js",
+  "heroku-postbuild": "cd frontend && npm install && npm run build"
   },
   "keywords": ["fullstack", "react", "node", "express"],
   "author": "Your Name",
