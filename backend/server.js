@@ -14,12 +14,12 @@ app.use(cors());
 app.use(helmet());
 app.use(morgan('tiny'));
 
-// Statik dosyaları sunma
-app.use(express.static(path.join(__dirname, 'build')));
+// Frontend build klasörünü backend üzerinden sunma
+app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 // Diğer tüm istekler için index.html dosyasını sunma
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
 });
 app.use((err, req, res, next) => {
   console.error(err.stack);
