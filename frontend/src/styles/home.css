@@ -126,12 +126,12 @@ body {
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: #545454;
+  background-color: #9b9b9b;
   color: white;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.85;
   transition: opacity 0.3s, transform 0.3s;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
