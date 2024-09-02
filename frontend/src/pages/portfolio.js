@@ -1,5 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/portfolio.css";
+import CanerImage from "../images/caner.jpeg";
+import MüfitImage from "../images/müfit.jpeg";
+import DağhanImage from "../images/dağhan.jpeg";
+import ResumeImage from "../images/resume.png";
+import LinkedinImage from "../images/linkedin.png";
+import GithubImage from "../images/github.png";
 
 const Portfolio = () => {
   return (
@@ -8,34 +15,7 @@ const Portfolio = () => {
       <div className="portfolio-section">
         <div className="portfolio-card">
           <img
-            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-            alt="Kemal Müfit Şakır"
-            className="portfolio-photo"
-          />
-          <div className="portfolio-box">
-            <h2 className="portfolio-name">Müfit ŞAKIR</h2>
-            <h3 className="portfolio-job">Web Developer</h3>
-            <p className="portfolio-information">
-              Ben, farklı alanlarda uzmanlaşmış, yaratıcı çözümler sunabilen ve
-              projelerde yüksek performans gösteren bir profesyonelim.
-              Teknoloji, tasarım ve yönetim gibi çeşitli disiplinlerde
-              derinlemesine bilgi sahibiyim. Takım çalışmasına yatkın, iletişim
-              becerileri güçlü ve yeniliklere açık biriyim. Her zaman en iyisini
-              hedefler, zorluklarla başa çıkmada etkili stratejiler geliştirir
-              ve süreçlerin iyileştirilmesine katkıda bulunurum. Benimle
-              çalışanlar, projelerinde fark yaratan bir destek alır ve her
-              adımda güvenilir bir iş ortağı bulur.{" "}
-            </p>
-            <div className="portfolio-social">
-              <button className="portfolio-button">Resume</button>
-              <button className="portfolio-button">LinkedIn</button>
-              <button className="portfolio-button">Github</button>
-            </div>
-          </div>
-        </div>
-        <div className="portfolio-card">
-          <img
-            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+            src={CanerImage}
             alt="Taha Caner Kuyucu"
             className="portfolio-photo"
           />
@@ -54,20 +34,50 @@ const Portfolio = () => {
               adımda güvenilir bir iş ortağı bulur.
             </p>
             <div className="portfolio-social">
-              <button className="portfolio-button">Resume</button>
-              <button className="portfolio-button">LinkedIn</button>
-              <button className="portfolio-button">Github</button>
+              <Link to='#' className="portfolio-resume-link"><img src={ResumeImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/> Resume</Link>
+              <Link to='#' className="portfolio-linkedin-link"><img src={LinkedinImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/></Link>
+              <Link to='#' className="portfolio-github-link"><img src={GithubImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/></Link>
             </div>
           </div>
         </div>
+
+
+        <div className="portfolio-card">
+            <div className="portfolio-box-reverse">
+            <h2 className="portfolio-name-reverse">Müfit ŞAKIR</h2>
+            <h3 className="portfolio-job">Web Developer</h3>
+            <p className="portfolio-information">
+              Ben, farklı alanlarda uzmanlaşmış, yaratıcı çözümler sunabilen ve
+              projelerde yüksek performans gösteren bir profesyonelim.
+              Teknoloji, tasarım ve yönetim gibi çeşitli disiplinlerde
+              derinlemesine bilgi sahibiyim. Takım çalışmasına yatkın, iletişim
+              becerileri güçlü ve yeniliklere açık biriyim. Her zaman en iyisini
+              hedefler, zorluklarla başa çıkmada etkili stratejiler geliştirir
+              ve süreçlerin iyileştirilmesine katkıda bulunurum. Benimle
+              çalışanlar, projelerinde fark yaratan bir destek alır ve her
+              adımda güvenilir bir iş ortağı bulur.
+            </p>
+            <div className="portfolio-social-reverse">
+              <Link to='#' className="portfolio-github-link"><img src={GithubImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/></Link>
+              <Link to='#' className="portfolio-linkedin-link"><img src={LinkedinImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/></Link>
+              <Link to='#' className="portfolio-resume-link"><img src={ResumeImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/> Resume</Link>
+            </div>
+          </div>
+          <img
+            src={MüfitImage}
+            alt="Taha Caner Kuyucu"
+            className="portfolio-photo"
+          />
+        </div>
+
         <div className="portfolio-card">
           <img
-            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-            alt="Dağhan Yazgan"
+            src={DağhanImage}
+            alt="Taha Caner Kuyucu"
             className="portfolio-photo"
           />
           <div className="portfolio-box">
-            <h2 className="portfolio-name">Dağhan YAZGAN</h2>
+            <h2 className="portfolio-name">Dağhan Yazgan</h2>
             <h3 className="portfolio-job">Mobile Developer</h3>
             <p className="portfolio-information">
               Ben, farklı alanlarda uzmanlaşmış, yaratıcı çözümler sunabilen ve
@@ -78,12 +88,12 @@ const Portfolio = () => {
               hedefler, zorluklarla başa çıkmada etkili stratejiler geliştirir
               ve süreçlerin iyileştirilmesine katkıda bulunurum. Benimle
               çalışanlar, projelerinde fark yaratan bir destek alır ve her
-              adımda güvenilir bir iş ortağı bulur.{" "}
+              adımda güvenilir bir iş ortağı bulur.
             </p>
             <div className="portfolio-social">
-              <button className="portfolio-button">Resume</button>
-              <button className="portfolio-button">LinkedIn</button>
-              <button className="portfolio-button">Github</button>
+              <Link to='#' className="portfolio-resume-link"><img src={ResumeImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/> Resume</Link>
+              <Link to='#' className="portfolio-linkedin-link"><img src={LinkedinImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/></Link>
+              <Link to='#' className="portfolio-github-link"><img src={GithubImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/></Link>
             </div>
           </div>
         </div>

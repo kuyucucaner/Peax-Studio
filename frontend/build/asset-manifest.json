@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ad1381c.css",
-    "main.js": "/static/js/main.78b1641f.js",
+    "main.css": "/static/css/main.a5a1b8fc.css",
+    "main.js": "/static/js/main.6f8988ff.js",
+    "static/media/dağhan.jpeg": "/static/media/dağhan.2e0754741b47f6cb36a5.jpeg",
+    "static/media/müfit.jpeg": "/static/media/müfit.d2c9da27d28f6bf7445a.jpeg",
     "static/media/home.jpg": "/static/media/home.652c404808da7240e9bb.jpg",
     "static/media/value.jpg": "/static/media/value.dd3b7cfcf7e7db94b2ca.jpg",
     "static/media/mission.png": "/static/media/mission.7b15605e0748c94c988d.png",
     "static/media/aboutheader.webp": "/static/media/aboutheader.d0cf8c0c4bd89ee46719.webp",
+    "static/media/caner.jpeg": "/static/media/caner.811b37a0bbfa3cc4329e.jpeg",
     "static/media/vision.jpg": "/static/media/vision.1839435f2476d624a429.jpg",
+    "static/media/github.png": "/static/media/github.332584fdf67b75ccd094.png",
+    "static/media/resume.png": "/static/media/resume.66c294479dc8f1fa5cf8.png",
+    "static/media/linkedin.png": "/static/media/linkedin.dc53f4f69ec9ed72699c.png",
     "static/media/peaxstudio.svg": "/static/media/peaxstudio.5cb8b532775af97c9fe77e52bb084ef6.svg",
     "index.html": "/index.html",
-    "main.4ad1381c.css.map": "/static/css/main.4ad1381c.css.map",
-    "main.78b1641f.js.map": "/static/js/main.78b1641f.js.map"
+    "main.a5a1b8fc.css.map": "/static/css/main.a5a1b8fc.css.map",
+    "main.6f8988ff.js.map": "/static/js/main.6f8988ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ad1381c.css",
-    "static/js/main.78b1641f.js"
+    "static/css/main.a5a1b8fc.css",
+    "static/js/main.6f8988ff.js"
   ]
 }
