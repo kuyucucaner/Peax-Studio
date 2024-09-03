@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/about.css";
-import MissionImage from "../images/mission.png";
-import AboutHeaderImage from "../images/aboutheader.webp";
-import VisionImage from "../images/vision.jpg";
-import ValueImage from "../images/value.jpg";
+import MissionImage from "../images/about/mission.png";
+import AboutHeaderImage from "../images/about/aboutheader.webp";
+import VisionImage from "../images/about/vision.jpg";
+import ValueImage from "../images/about/value.jpg";
 
 const About = () => {
   return (

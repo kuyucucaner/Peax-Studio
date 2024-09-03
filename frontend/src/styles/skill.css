@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     animation: fadeIn 1s ease-in-out;
-    background: linear-gradient(to bottom, #5f5f5f, #6b6b6b);
     overflow-x: hidden;
+    background-color: #1e1e1e;
   }
 .skill-box{
     display: flex;
@@ -41,14 +41,25 @@
     column-gap: 10em; /* Yatay boşluk */
     row-gap: 2em; /* Dikey boşluk */
 }
-
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.205);
+    padding: 15px;
+    border-radius: 20px;
+}
 .skill-icon{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     border: none;
     opacity: 0.7;
     transition: opacity 0.3s ease;
+}
+.skill-name{
+    color: white;
+    padding-top: 5px;
 }
 .skill-icon:hover{
     opacity: 1;

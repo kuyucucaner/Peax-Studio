@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/portfolio.css";
-import CanerImage from "../images/caner.jpeg";
-import MüfitImage from "../images/müfit.jpeg";
-import DağhanImage from "../images/dağhan.jpeg";
-import ResumeImage from "../images/resume.png";
-import LinkedinImage from "../images/linkedin.png";
-import GithubImage from "../images/github.png";
+import CanerImage from "../images/portfolio/caner.jpeg";
+import MüfitImage from "../images/portfolio/müfit.jpeg";
+import DağhanImage from "../images/portfolio/dağhan.jpeg";
+import ResumeImage from "../images/portfolio/resume.png";
+import LinkedinImage from "../images/portfolio/linkedin.png";
+import GithubImage from "../images/portfolio/github.png";
 
 const Portfolio = () => {
   return (

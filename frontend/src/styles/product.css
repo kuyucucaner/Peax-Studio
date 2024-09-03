@@ -21,7 +21,7 @@
 
 .carousel-blog-site {
   position: relative;
-  background-image: url('../images/personalblogsite.jpeg');
+  background-image: url('../images/products/personalblogsite.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -37,7 +37,7 @@
 }
 .carousel-corporate-site{
   position: relative;
-  background-image: url('../images/corporate.jpg');
+  background-image: url('../images/products/corporate.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -52,7 +52,7 @@
 }
 .carousel-ecommerce-site{
   position: relative;
-  background-image: url('../images/ecommerce.jpeg');
+  background-image: url('../images/products/ecommerce.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -67,7 +67,7 @@
 }
 .carousel-landing-site{
   position: relative;
-  background-image: url('../images/landing.jpg');
+  background-image: url('../images/products/landing.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -82,7 +82,7 @@
 }
 .carousel-forum-site{
   position: relative;
-  background-image: url('../images/forum.jpg');
+  background-image: url('../images/products/forum.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -97,7 +97,7 @@
 }
 .carousel-membership-site{
   position: relative;
-  background-image: url('../images/membership.png');
+  background-image: url('../images/products/membership.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -112,7 +112,7 @@
 }
 .carousel-reservation-site{
   position: relative;
-  background-image: url('../images/reservation.png');
+  background-image: url('../images/products/reservation.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -127,7 +127,7 @@
 }
 .carousel-cv-site{
   position: relative;
-  background-image: url('../images/cv.jpeg');
+  background-image: url('../images/products/cv.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -142,7 +142,7 @@
 }
 .carousel-travel-site{
   position: relative;
-  background-image: url('../images/travel.png');
+  background-image: url('../images/products/travel.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -157,7 +157,7 @@
 }
 .carousel-magazine-site{
   position: relative;
-  background-image: url('../images/magazine.jpg');
+  background-image: url('../images/products/magazine.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -173,7 +173,7 @@
 
 .carousel-fitness-site{
   position: relative;
-  background-image: url('../images/fitness.jpeg');
+  background-image: url('../images/products/fitness.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../styles/home.css";
-import HomeImage from "../images/peaxstudio.svg";
+import HomeImage from "../images/home/peaxstudio.svg";
 
 const Home = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
