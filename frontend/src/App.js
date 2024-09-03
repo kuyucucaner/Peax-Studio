@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/about';
 import Contact from './pages/contact';
-import Project from './pages/project'
+import Product from './pages/product'
 import Portfolio from './pages/portfolio'
 import Skill from './pages/skill'
 import './styles/scroll-bar.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           </Routes>
           <About />      
           <Portfolio /> 
-          <Project />
+          <Product />
           <Skill />
           <Contact />
         </main>

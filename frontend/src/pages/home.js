@@ -70,10 +70,10 @@ const Home = () => {
         />
         <button
           className="home-button"
-          onClick={() => handleButtonClick("project-section")}
+          onClick={() => handleButtonClick("product-section")}
           aria-label="Scroll to Projects Section"
         >
-          Projects
+          Products
         </button>
         <button
           className="home-button"

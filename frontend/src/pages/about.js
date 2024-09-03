@@ -9,13 +9,13 @@ const About = () => {
   return (
     <section className="about-section" id="about-section">
       <div className="about-box">
+        <div className="about-content">
+          <h1 className="about-title">About Peax Studio</h1>
         <img
           src={AboutHeaderImage}
           alt="Peax Studio Creative Design"
           className="about-image"
         />
-        <div className="about-content">
-          <h1 className="about-title">About Peax Studio</h1>
           <p className="about-description">
             Peax Studio is a creative design and development studio dedicated to
             bringing innovative ideas to life. We specialize in crafting unique
@@ -37,18 +37,6 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="about-sub-box">
-          <p className="about-description">
-            Our mission is to deliver innovative, efficient solutions that go
-            beyond merely meeting client expectations. We are driven by a
-            commitment to excellence, seeking to transform challenges into
-            opportunities through creative vision and the latest technological
-            advancements. Each project we undertake is an opportunity to set a
-            new standard of success, where our dedication to quality and detail
-            shines through.
-          </p>
-        </div>
-
 
       <div className="about-achievements">
         <div className="about-x">
