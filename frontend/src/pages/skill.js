@@ -17,6 +17,8 @@ import Flutter from "../images/skills/flutter.svg";
 import Express from "../images/skills/express.png";
 import Boostrap from "../images/skills/boostrap.png";
 import API from "../images/skills/api.png";
+import GoogleCloud from "../images/skills/googlecloud.svg";
+import Redis from "../images/skills/redis.svg";
 
 import Firebase from "../images/skills/firebase.svg";
 import Mongo from "../images/skills/mongo.svg";
@@ -32,7 +34,7 @@ import IntelliJ from "../images/skills/intellij.svg";
 import Postman from "../images/skills/postman.svg";
 import Swagger from "../images/skills/swagger.svg";
 import VsCode from "../images/skills/vscode.svg";
-
+import Xcode from "../images/skills/xcode.svg";
 const Skill = () => {
   return (
     <section className="skill-section" id="skill-section">
@@ -108,6 +110,14 @@ const Skill = () => {
             <img src={API} className="skill-icon" alt="API" />
             <h3 className="skill-name">API</h3>
           </div>
+          <div className="skill-card">
+            <img src={GoogleCloud} className="skill-icon" alt="Google Cloud Service" />
+            <h3 className="skill-name">Google Cloud Service</h3>
+          </div>
+          <div className="skill-card">
+            <img src={Redis} className="skill-icon" alt="Redis" />
+            <h3 className="skill-name">Redis</h3>
+          </div>
         </div>
       </div>
       <div className="skill-box">
@@ -176,6 +186,10 @@ const Skill = () => {
           <div className="skill-card">
             <img src={VsCode} className="skill-icon" alt="Visual Studio Code" />
             <h3 className="skill-name">Visual Studio Code</h3>
+          </div>
+          <div className="skill-card">
+            <img src={Xcode} className="skill-icon" alt="Xcode" />
+            <h3 className="skill-name">Xcode</h3>
           </div>
         </div>
       </div>
