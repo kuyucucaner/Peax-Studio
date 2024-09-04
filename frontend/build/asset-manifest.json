@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b83639bd.css",
-    "main.js": "/static/js/main.694a4d63.js",
+    "main.css": "/static/css/main.b32dddbd.css",
+    "main.js": "/static/js/main.b6f09d26.js",
     "static/media/reservation.png": "/static/media/reservation.b3165ecb90e0042b3384.png",
     "static/media/travel.png": "/static/media/travel.44272c00dc0996c66dd0.png",
     "static/media/magazine.jpg": "/static/media/magazine.3858cbf7e34e2c672d14.jpg",
@@ -56,11 +56,11 @@
     "static/media/git.svg": "/static/media/git.c08353563539c6459b353f29d8dd7bf2.svg",
     "static/media/flutter.svg": "/static/media/flutter.5be541dd37acf42d0d53cc72fd48362c.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.15f0337078f13db400acab3639711ec7.svg",
-    "main.b83639bd.css.map": "/static/css/main.b83639bd.css.map",
-    "main.694a4d63.js.map": "/static/js/main.694a4d63.js.map"
+    "main.b32dddbd.css.map": "/static/css/main.b32dddbd.css.map",
+    "main.b6f09d26.js.map": "/static/js/main.b6f09d26.js.map"
   },
   "entrypoints": [
-    "static/css/main.b83639bd.css",
-    "static/js/main.694a4d63.js"
+    "static/css/main.b32dddbd.css",
+    "static/js/main.b6f09d26.js"
   ]
 }

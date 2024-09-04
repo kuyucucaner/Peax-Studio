@@ -4,7 +4,8 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 require('dotenv').config();
-
+const bodyParser = require('body-parser');
+const mailRoutes = require('./routes/mail-routes'); // Dosya yolu
 // Uygulama oluşturma
 const app = express();
 
@@ -13,6 +14,10 @@ app.use(express.json());
 app.use(cors());
 app.use(helmet());
 app.use(morgan('tiny'));
+app.use(bodyParser.json());
+
+
+app.use('/api/mail', mailRoutes);
 
 // Frontend build klasörünü backend üzerinden sunma
 app.use(express.static(path.join(__dirname, '../frontend/build')));

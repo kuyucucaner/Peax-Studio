@@ -48,6 +48,12 @@
     border: 1px solid rgba(128, 128, 128, 0.205);
     padding: 15px;
     border-radius: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease , box-shadow 0.3s ease;
+}
+.skill-card:hover{
+    opacity: 1;
+    box-shadow: 0 2px 4px #eeeeee25;
 }
 .skill-icon{
     width: 80px;
