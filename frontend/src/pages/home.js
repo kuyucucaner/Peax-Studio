@@ -98,11 +98,6 @@ const Home = () => {
     };
   }, [handleCloseModal]);
 
-  const handleOverlayClick = (event) => {
-    if (event.target.classList.contains("modal-overlay")) {
-      handleCloseModal();
-    }
-  };
   return (
     <section className="home">
       <div className="home-button-container">
@@ -180,7 +175,7 @@ const Home = () => {
         </div>
       )}
       {isModalOpen && (
-       <div className="modal-overlay" onClick={handleOverlayClick}>
+       <div className="modal-overlay" >
        <div className="modal-container">
          <div className="modal-header">
            <h2 className="close-modal-title">Contact Form</h2>

@@ -2,51 +2,78 @@
   display: flex;
   flex-direction: column;
   animation: fadeIn 1s ease-in-out;
-  background-color: #1e1e1e;
+  background: linear-gradient(to bottom, #090909, #1e1e1e);
   overflow-x: hidden;
-  margin-top: 3em;
 }
 .about-box {
   display: flex;
-  flex-direction: column;
-  padding-left: 4em;
-  padding-right: 1em;
+  justify-content: center;
+  align-items: center;
   margin-top: 2em;
   padding-bottom: 0;
+
 }
-.about-image {
-  width: 95%;
-  margin-top: 3em;
-  margin-left: auto;
-  margin-right: auto;
-  height: 60vh;
-  max-width: 1600px;
-  border-radius: 5px;
-  border: none;
-  object-fit: cover;
-  box-shadow: 0px 2px 5px #a0a0a0;
-  margin-bottom: 4em;
-}
+
 .about-content {
-  display: flex;
-  flex-direction: column;
-  padding-left: 4em;
-  padding-right: 4em;
+  text-align: center;
+  position: relative;
+  width: 100%;
   margin-top: 4em;
   animation: fadeIn 1s ease-in-out;
 }
+.video-container {
+  position: relative;
+}
+
+.about-video {
+  width: 100%;
+  height: 95vh;
+  border: none;
+  object-fit: cover;
+}
+
+.overlay {
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Yarı saydam siyah katman */
+  display: flex;
+  align-items: center;
+  border: none;
+}
 .about-title {
-  font-size: 42px;
+  font-size: 62px;
   border-bottom: 1px solid #eeeeee50;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-shadow: 0px 1px 2px #ffffff;
   width: 50%;
-  margin-left: auto;
+  margin-left: 2.5em;
+  margin-top: 1.5em;
   margin-right: auto;
   color: #f5f5f5;
-  text-align: center;
+  text-align: start;
   animation: fadeIn 1.2s ease-in-out;
+}
+.about-description-overlay{
+  font-size: 22px;
+  line-height: 1.8;
+  text-shadow: 0px 1px 2px #00000030;
+  color: #dbdbdb;
+  width: 60%;
+  margin-left: 7em;
+  margin-right: auto;
+  margin-top: 2em;
+  animation: fadeIn 1.5s ease-in-out;
+  text-align: start;
+} 
+b{
+  color: #ffffff;
+  text-shadow: 0px 1px 2px #adadad76;
+
 }
 .about-description {
   font-size: 18px;
@@ -65,27 +92,26 @@
   padding-left: 3em;
   padding-right: 3em;
   margin-top: 3em;
-  width:90%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-.about-x{
+.about-x {
   display: flex;
   flex-direction: row;
-  margin-bottom: 8em;
-  margin-top: 5em;
+  margin-bottom: 5em;
+  margin-top: 3em;
 }
-.about-text-section{
+.about-text-section {
   display: flex;
   flex-direction: column;
 }
 
-.about-sub-box{
+.about-sub-box {
   display: flex;
   flex-direction: column;
-
 }
-.about-subimage{
+.about-subimage {
   margin-top: 4em;
   margin-bottom: 2em;
   width: 100%;
@@ -95,7 +121,6 @@
   border-radius: 5px;
   object-fit: contain;
   animation: fadeIn 1.2s ease-in-out;
-
 }
 .about-subtitle {
   font-size: 32px;
