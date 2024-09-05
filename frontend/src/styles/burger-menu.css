@@ -33,6 +33,10 @@
     -webkit-appearance: none; /* Tarayıcıların varsayılan stilini kaldırır */
     appearance: none;
   }
+  .burger-menu-line {
+    will-change: transform, opacity;
+  }
+  
   /* Burger icon animation */
   .burger-menu-line {
     width: 100%;
@@ -40,15 +44,15 @@
     background-color: #fff;
     transition: all 0.3s ease-in-out;
   }
-  .burger-menu-icon.open .burger-line:nth-child(1) {
+  .burger-menu-icon.open .burger-menu-line:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
   }
   
-  .burger-menu-icon.open .burger-line:nth-child(2) {
+  .burger-menu-icon.open .burger-menu-line:nth-child(2) {
     opacity: 0;
   }
   
-  .burger-menu-icon.open .burger-line:nth-child(3) {
+  .burger-menu-icon.open .burger-menu-line:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
   
