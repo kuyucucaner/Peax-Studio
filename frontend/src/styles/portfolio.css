@@ -144,3 +144,10 @@
   text-decoration: none;
   color: white;
 }
+  /* Masaüstü Cihazlar için Responsive Ayarlar */
+  @media (max-width: 769px) {
+    .portfolio-card , .portfolio-social , .portfolio-social-reverse{
+      flex-direction: column;
+    }
+  }
+  

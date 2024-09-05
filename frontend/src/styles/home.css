@@ -276,3 +276,10 @@ html {
 .modal-body form button:hover {
   background-color: #035b15;
 }
+  /* Masaüstü Cihazlar için Responsive Ayarlar */
+  @media (max-width: 769px) {
+    .home-section-title,.home-section-subtitle{
+      font-size: 2rem;
+    }
+  }
+  

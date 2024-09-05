@@ -1,16 +1,15 @@
-import React, { useState, useEffect ,useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "../styles/home.css";
 import HomeImage from "../images/home/peaxstudio.svg";
 import GmailImage from "../images/contact/gmail.png";
-import { toast } from 'react-toastify';
-
+import { toast } from "react-toastify";
+import BurgerMenu from "../components/burger-menu";
 
 const Home = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false); // Yeni state eklendi
-
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -23,31 +22,30 @@ const Home = () => {
     };
 
     try {
-      const response = await fetch('/api/mail/send-email', {
-        method: 'POST',
+      const response = await fetch("/api/mail/send-email", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        toast.success('Email sent successfully!');  // Success notification
+        toast.success("Email sent successfully!"); // Success notification
         setIsModalOpen(false);
       } else {
-        toast.error('An error occurred while sending the email.');  // Error notification
+        toast.error("An error occurred while sending the email."); // Error notification
         setIsModalOpen(false);
       }
     } catch (error) {
-      console.error('Error:', error);
-      toast.error('An error occurred, please try again.');  // Error notification
+      console.error("Error:", error);
+      toast.error("An error occurred, please try again."); // Error notification
       setIsModalOpen(false);
     } finally {
       setIsSubmitting(false); // Form gönderimi tamamlandığında buton tekrar aktif olur
     }
-};
+  };
 
-  
   const handleButtonClick = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -76,13 +74,12 @@ const Home = () => {
         setShowScrollButton(false);
       }
     };
-  
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -100,6 +97,7 @@ const Home = () => {
 
   return (
     <section className="home">
+      <BurgerMenu />
       <div className="home-button-container">
         <button
           className="home-button"
@@ -175,28 +173,41 @@ const Home = () => {
         </div>
       )}
       {isModalOpen && (
-       <div className="modal-overlay" >
-       <div className="modal-container">
-         <div className="modal-header">
-           <h2 className="close-modal-title">Contact Form</h2>
-           <button className="close-modal-button" onClick={handleCloseModal}>
-             ×
-           </button>
-         </div>
-         <div className="modal-body">
-         <form onSubmit={handleSubmit}>
-    <input type="email" name="email" placeholder="Email*" required />
-    <input type="text" name="subject" placeholder="Subject*" required/>
-    <textarea name="message" placeholder="Message*" required></textarea>
-    <button type="submit" disabled={isSubmitting}>
-             {isSubmitting ? "Sending..." : "Send"} {/* Buton gönderim sırasında disable olur */}
-           </button>
-</form>
-
-         </div>
-       </div>
-     </div>
-     
+        <div className="modal-overlay">
+          <div className="modal-container">
+            <div className="modal-header">
+              <h2 className="close-modal-title">Contact Form</h2>
+              <button className="close-modal-button" onClick={handleCloseModal}>
+                ×
+              </button>
+            </div>
+            <div className="modal-body">
+              <form onSubmit={handleSubmit}>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email*"
+                  required
+                />
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject*"
+                  required
+                />
+                <textarea
+                  name="message"
+                  placeholder="Message*"
+                  required
+                ></textarea>
+                <button type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? "Sending..." : "Send"}{" "}
+                  {/* Buton gönderim sırasında disable olur */}
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       )}
     </section>
   );

@@ -91,3 +91,11 @@ background-color: #1e1e1e;
     transform: translateY(0);
   }
 }
+
+  /* Masaüstü Cihazlar için Responsive Ayarlar */
+  @media (max-width: 769px) {
+    .contact-info{
+      flex-direction: column;
+    }
+  }
+  
