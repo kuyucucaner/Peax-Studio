@@ -18,47 +18,15 @@
 }
   .burger-menu-icon {
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 24px;
+    font-size: 25px;
     background: none;
     border: none;
     outline: none;
-    z-index: 999;
+    z-index: 1000;
     color: #ffffff;
     visibility: visible; /* Butonun görünür olduğundan emin olun */
     opacity: 1; /* Görünürlük ayarını tam yapın */
-    -webkit-appearance: none; /* Tarayıcıların varsayılan stilini kaldırır */
-    appearance: none;
   }
-  .burger-menu-line {
-    will-change: transform, opacity;
-  }
-  
-/* Burger icon animation */
-.burger-menu-line {
-  will-change: transform, opacity;
-  width: 100%;
-  height: 3px;
-  background-color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-
-.burger-menu-icon.open .burger-menu-line:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
-}
-
-.burger-menu-icon.open .burger-menu-line:nth-child(2) {
-  opacity: 0;
-}
-
-.burger-menu-icon.open .burger-menu-line:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
-}
-
-  
   /* Menü Öğeleri */
   .menu-items {
     display: none;
@@ -127,57 +95,26 @@
     visibility: visible;
   }
 
- /* Mobil cihazlar için responsive ayarlar */
-@media (max-width: 768px) {
-  .home-button-container {
-    display: none; /* Mobilde butonları gizle */
+  
+  /* Mobil Cihazlar için Responsive Ayarlar */
+  @media (max-width: 768px) {
+    .home-button-container {
+      display: none; /* Mobilde butonları gizle */
+    }
+  
+    .burger-menu-container {
+      display: flex;
+    }
+    .menu-button{
+        padding: 20px;
+        font-size: 14px;
+    }
   }
-
-  /* Burger menü görünür olacak */
-  .burger-menu-container {
-    display: flex;
-  }
-
-  .menu-button {
-    padding: 20px;
-    font-size: 14px;
-  }
-
-  /* Menü ikonu her zaman görünür olacak */
-  .burger-menu-icon {
-    display: flex; /* Flex ile burger menü butonunu görünür kıl */
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 24px;
-    background: none;
-    border: none;
-    outline: none;
-    z-index: 999;
-    color: #ffffff;
-    visibility: visible; /* Görünürlüğü garanti et */
-    opacity: 1; /* Tam görünürlük */
-    -webkit-appearance: none; /* Tarayıcıların varsayılan stilini kaldırır */
-    appearance: none;
+  @media (min-width: 769px){
+    .burger-menu-section{
+      display: none;
+    }
   }
   
-  /* Menü içeriğini mobilde gizle */
-  .burger-menu-section {
-    display: none; /* Menü içeriği ilk başta gizli */
-  }
-}
-
-/* Büyük ekranlar için ayarlar */
-@media (min-width: 769px) {
-  .burger-menu-container {
-    display: none; /* Büyük ekranlarda burger menü gizlenir */
-  }
-
-  .burger-menu-section {
-    display: block; /* Menü içeriği büyük ekranlarda gösterilir */
-  }
-}
-
 
 

@@ -37,14 +37,11 @@ const BurgerMenu = () => {
       <div className="burger-menu-container">
         {/* Burger Menu Button */}
         <button 
-          className={`burger-menu-icon ${isOpen ? 'open' : ''}`} 
+          className={`burger-menu-icon`} 
           onClick={handleMenuToggle}
           aria-label="Toggle menu"
           aria-expanded={isOpen}
-        >
-          <span className="burger-menu-line"></span>
-          <span className="burger-menu-line"></span>
-          <span className="burger-menu-line"></span>
+        >☰
         </button>
 
         {/* Navigation Menu */}
