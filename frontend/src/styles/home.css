@@ -277,9 +277,56 @@ html {
   background-color: #035b15;
 }
   /* Masaüstü Cihazlar için Responsive Ayarlar */
-  @media (max-width: 769px) {
+  @media (max-width: 768px) {
     .home-section-title,.home-section-subtitle{
-      font-size: 2rem;
+      font-size: 1.8rem;
+    }
+    .home-section-title{
+      padding-left: 1em;
+      padding-right: 1em;
+      padding-top: 0.5em;
+    }
+    .home-section-subtitle{
+      padding: 1.5em 0.5em 2em ;
+    }
+    .home-section-text{
+      font-size: 1rem;
+    }
+    .home-section-subtext{
+      font-size: 0.8rem;
+    }
+    .home-section-slogan{
+      width: 50%;
+      font-size: 0.8rem;
+      border-radius: 15px;
     }
   }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .home-section-title,.home-section-subtitle{
+      font-size: 2.6rem;
+    }
+   .home-button{
+     font-size: 1em;
+   }
+   .home-image{
+    width: 45%;
+   }  
+   .home-section-slogan{
+    font-size: 1rem;
+    width: 40%;
+   }
+  }
   
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+}
+
+/* Büyük laptoplar ve masaüstü bilgisayarlar (1441px - 1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  /* Stil ayarları buraya */
+}
+
+/* 4K ve daha büyük ekranlar (1921px ve üzeri) */
+@media (min-width: 1921px) {
+  /* Stil ayarları buraya */
+}
