@@ -30,6 +30,7 @@
   height: 95vh;
   border: none;
   object-fit: cover;
+  pointer-events: none;
 }
 
 .overlay {

@@ -19,6 +19,7 @@
   .burger-menu-icon {
     cursor: pointer;
     font-size: 25px;
+    padding-right: 0;
     background: none;
     border: none;
     outline: none;
