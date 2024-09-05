@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/about.css";
 import MissionImage from "../images/about/mission.png";
-import AboutHeaderVideo from "../videos/about.mp4";
-import VisionImage from "../images/about/vision.jpg";
+import AboutVideo from "../videos/about.mp4";
+import VisionImage from "../images/about/vision.jpeg";
 import ValueImage from "../images/about/value.jpg";
 
 const About = () => {
@@ -11,7 +11,7 @@ const About = () => {
       <div className="about-box">
         <div className="about-content">
           <video
-            src={AboutHeaderVideo} // Buraya videonun dosya yolunu ekleyin
+            src={AboutVideo}
             autoPlay
             muted
             loop
@@ -68,7 +68,7 @@ const About = () => {
             className="about-subimage"
           ></img>
           <div className="about-text-section">
-            <h2 className="about-subtitle">Vision</h2>
+            <h2 className="about-subtitle">OUR Vision</h2>
             <p className="about-description">
               Our mission is to deliver innovative, efficient solutions that go
               beyond merely meeting client expectations. We are driven by a
@@ -86,7 +86,7 @@ const About = () => {
         </div>
         <div className="about-x">
           <div className="about-text-section">
-            <h2 className="about-subtitle">VALUE</h2>
+            <h2 className="about-subtitle">OUR VALUE</h2>
             <p className="about-description">
               Our mission is to deliver innovative, efficient solutions that go
               beyond merely meeting client expectations. We are driven by a

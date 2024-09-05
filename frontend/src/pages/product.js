@@ -1,12 +1,14 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../styles/product.css";
+
 function Product() {
   return (
     <section className="product-section" id="product-section">
       <h1 className="product-title">What We Can Do for You</h1>
-      <Carousel interval={3000} fade className="carousel-section">
+      <Carousel fade interval={3000} className="carousel-section">
         <Carousel.Item className="carousel-blog-site">
+          
           <div className="carousel-image">
             <h2 className="carousel-title">Personal Blog Sites</h2>
           </div>

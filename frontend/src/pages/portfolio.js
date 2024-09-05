@@ -34,16 +34,46 @@ const Portfolio = () => {
               adımda güvenilir bir iş ortağı bulur.
             </p>
             <div className="portfolio-social">
-              <Link to='#' className="portfolio-resume-link"><img src={ResumeImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/> Resume</Link>
-              <Link to='#' className="portfolio-linkedin-link"><img src={LinkedinImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/></Link>
-              <Link to='#' className="portfolio-github-link"><img src={GithubImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/></Link>
+              <a
+                href="/files/caner.pdf"
+                download
+                className="portfolio-resume-link"
+              >
+                <img
+                  src={ResumeImage}
+                  alt="Caner Kuyucu Resume"
+                  className="portfolio-link-icon"
+                />{" "}
+                Resume
+              </a>
+              <Link
+                to="https://www.linkedin.com/in/caner-kuyucu/"
+                className="portfolio-linkedin-link"
+                  target="_blank"
+              >
+                <img
+                  src={LinkedinImage}
+                  alt="Caner Kuyucu Linkedin"
+                  className="portfolio-link-icon"
+                />
+              </Link>
+              <Link
+                to="https://github.com/kuyucucaner"
+                className="portfolio-github-link"
+                target="_blank"
+              >
+                <img
+                  src={GithubImage}
+                  alt="Caner Kuyucu Github"
+                  className="portfolio-link-icon"
+                />
+              </Link>
             </div>
           </div>
         </div>
 
-
         <div className="portfolio-card">
-            <div className="portfolio-box-reverse">
+          <div className="portfolio-box-reverse">
             <h2 className="portfolio-name-reverse">Müfit ŞAKIR</h2>
             <h3 className="portfolio-job">Web Developer</h3>
             <p className="portfolio-information">
@@ -58,9 +88,41 @@ const Portfolio = () => {
               adımda güvenilir bir iş ortağı bulur.
             </p>
             <div className="portfolio-social-reverse">
-              <Link to='#' className="portfolio-github-link"><img src={GithubImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/></Link>
-              <Link to='#' className="portfolio-linkedin-link"><img src={LinkedinImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/></Link>
-              <Link to='#' className="portfolio-resume-link"><img src={ResumeImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/> Resume</Link>
+              <Link
+                to="https://github.com/mufitsakir"
+                className="portfolio-github-link"
+                  target="_blank"
+              >
+                <img
+                  src={GithubImage}
+                  alt="Müfit Şakır Github"
+                  className="portfolio-link-icon"
+                />
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/kemal-m%C3%BCfit-%C5%9Fakir-793233225/"
+                className="portfolio-linkedin-link"
+                  target="_blank"
+              >
+                <img
+                  src={LinkedinImage}
+                  alt="Müfit Şakır Linkedin"
+                  className="portfolio-link-icon"
+                />
+              </Link>
+{/* 
+              <a
+                href="/files/caner.pdf"
+                download
+                className="portfolio-resume-link"
+              >
+                <img
+                  src={ResumeImage}
+                  alt="Müfit Şakır Resume"
+                  className="portfolio-link-icon"
+                />{" "}
+                Resume
+              </a> */}
             </div>
           </div>
           <img
@@ -91,9 +153,37 @@ const Portfolio = () => {
               adımda güvenilir bir iş ortağı bulur.
             </p>
             <div className="portfolio-social">
-              <Link to='#' className="portfolio-resume-link"><img src={ResumeImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/> Resume</Link>
-              <Link to='#' className="portfolio-linkedin-link"><img src={LinkedinImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/></Link>
-              <Link to='#' className="portfolio-github-link"><img src={GithubImage} alt="Caner Kuyucu Resume" className="portfolio-link-icon"/></Link>
+              <a
+                href="/files/dağhan.pdf"
+                download
+                className="portfolio-resume-link"
+              >
+                <img
+                  src={ResumeImage}
+                  alt="Dağhan Yazgan Resume"
+                  className="portfolio-link-icon"
+                />
+                Resume
+              </a>
+
+              <Link
+                to="https://www.linkedin.com/in/daghanyazgan/"
+                className="portfolio-linkedin-link"
+                  target="_blank"
+              >
+                <img
+                  src={LinkedinImage}
+                  alt="Dağhan Yazgan Linkedin"
+                  className="portfolio-link-icon"
+                />
+              </Link>
+              {/* <Link to="#" className="portfolio-github-link">
+                <img
+                  src={GithubImage}
+                  alt="Dağhan Yazgan Github"
+                  className="portfolio-link-icon"
+                />
+              </Link> */}
             </div>
           </div>
         </div>
