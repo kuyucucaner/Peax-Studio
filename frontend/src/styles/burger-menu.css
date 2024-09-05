@@ -26,7 +26,10 @@
     background: none;
     border: none;
     outline: none;
+    z-index: 999;
     color: #ffffff;
+    visibility: visible; /* Butonun görünür olduğundan emin olun */
+    opacity: 1; /* Görünürlük ayarını tam yapın */
   }
   /* Burger icon animation */
   .burger-menu-line {
