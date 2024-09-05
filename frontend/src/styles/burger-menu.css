@@ -30,6 +30,8 @@
     color: #ffffff;
     visibility: visible; /* Butonun görünür olduğundan emin olun */
     opacity: 1; /* Görünürlük ayarını tam yapın */
+    -webkit-appearance: none; /* Tarayıcıların varsayılan stilini kaldırır */
+    appearance: none;
   }
   /* Burger icon animation */
   .burger-menu-line {
