@@ -4,6 +4,7 @@
   animation: fadeIn 1s ease-in-out;
   background: linear-gradient(to bottom,#020202 ,#090909, #1e1e1e);
   overflow-x: hidden;
+  padding-top: 2em;
 }
 .about-box {
   display: flex;

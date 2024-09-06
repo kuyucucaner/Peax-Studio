@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-top: 5em;
   margin-bottom: 5em;
+  padding-top: 2em;
 }
 .product-title {
   text-align: center;

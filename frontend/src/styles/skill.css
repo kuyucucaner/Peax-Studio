@@ -4,6 +4,7 @@
     animation: fadeIn 1s ease-in-out;
     overflow-x: hidden;
     background-color: #1e1e1e;
+    padding-top: 2em;
   }
 .skill-box{
     display: flex;

@@ -22,7 +22,7 @@ const Home = () => {
     };
 
     try {
-      const response = await fetch("/api/mail/send-email", {
+      const response = await fetch("http://localhost:5000/api/mail/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -31,9 +31,13 @@ const Home = () => {
       });
 
       if (response.ok) {
+        const result = await response.text();
+        console.log('Mail sent successfully:', result);
         toast.success("Email sent successfully!"); // Success notification
         setIsModalOpen(false);
       } else {
+        const errorText = await response.text();
+        console.error('Error:', errorText);
         toast.error("An error occurred while sending the email."); // Error notification
         setIsModalOpen(false);
       }
