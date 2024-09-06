@@ -9,7 +9,7 @@
   font-size: 42px;
   border-bottom: 1px solid #eeeeee50;
   text-transform: uppercase;
-  width: 45%;
+  width: 47%;
   margin: auto;
   color: #f1f1f1;
   text-shadow: 1px 1px 2px #ffffff;
@@ -160,4 +160,63 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and  (max-width: 1200px) {
+  .product-title{
+    width: 70%;
+  }
+ 
+}
+@media screen and  (max-width: 973px) {
+  .carousel-title{
+    padding-top: 20px;
+  }
+  .carousel-caption{
+    top:130px;
+  }
+}
+@media screen and  (max-width: 768px) {
+  .carousel-blog-site,
+  .carousel-corporate-site,
+  .carousel-ecommerce-site,
+  .carousel-landing-site,
+  .carousel-forum-site,
+  .carousel-membership-site,
+  .carousel-reservation-site,
+  .carousel-cv-site,
+  .carousel-travel-site,
+  .carousel-magazine-site,
+  .carousel-fitness-site {
+
+    height: 800px; /* Örneğin, bu değeri ihtiyacınıza göre ayarlayın */
+  }
+}
+@media screen and  (max-width: 487px) {
+  .carousel-blog-site,
+  .carousel-corporate-site,
+  .carousel-ecommerce-site,
+  .carousel-landing-site,
+  .carousel-forum-site,
+  .carousel-membership-site,
+  .carousel-reservation-site,
+  .carousel-cv-site,
+  .carousel-travel-site,
+  .carousel-magazine-site,
+  .carousel-fitness-site {
+
+    height: 1000px; /* Örneğin, bu değeri ihtiyacınıza göre ayarlayın */
+  }
+  .carousel-caption{
+    top:150px;
+  }
+  .carousel-title{
+    font-size: 32px;
+  }
+  .carousel-caption h3 {
+    font-size: 1.2em; /* Alt başlık boyutu */
+  }
+  .carousel-caption p {
+    font-size: 1em; /* Paragraf boyutu */
+  }
+  
 }
