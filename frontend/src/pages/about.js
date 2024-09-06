@@ -61,7 +61,7 @@ const About = () => {
           ></img>
         </div>
 
-        <div className="about-x">
+        <div className="about-x-reverse">
           <img
             src={VisionImage}
             alt="Vision Illustration"
