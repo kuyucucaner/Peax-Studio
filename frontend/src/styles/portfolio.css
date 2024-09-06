@@ -24,7 +24,7 @@
   margin-top: 5em;
   align-items: center;
 }
-.portfolio-card {
+.portfolio-card ,.portfolio-card-reverse {
   display: flex;
   flex-direction: row;
   width: 90%;
@@ -144,10 +144,61 @@
   text-decoration: none;
   color: white;
 }
-  /* Masaüstü Cihazlar için Responsive Ayarlar */
-  @media (max-width: 769px) {
+
+@media screen and  (max-width: 1200px) {
+  .portfolio-card {
+    flex-direction: column;
+  }
+  .portfolio-card-reverse{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .portfolio-card{
+    align-items: center;
+  }
+  .portfolio-title{
+    width: 60%;
+  }
+  .portfolio-box , .portfolio-box-reverse{
+    align-items: center;
+    margin-top: 1em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .portfolio-name , .portfolio-name-reverse{
+    width: 50%;
+    text-align: center;
+  }
+  .portfolio-information{
+    text-align: center;
+    padding-bottom: 1em;
+  }
+  .portfolio-social , .portfolio-social-reverse{
+    margin: auto;
+  }
+  .portfolio-job{
+    text-align: center;
+  }
+}
+  @media screen and  (max-width: 768px) {
+    .portfolio-title{
+      width: 90%;
+    }
+   
+  }
+  @media screen and  (max-width: 400px) {
     .portfolio-card , .portfolio-social , .portfolio-social-reverse{
       flex-direction: column;
     }
+    .portfolio-title{
+     
+      font-size:32px;
+    }
+    .portfolio-github-link, .portfolio-linkedin-link ,.portfolio-resume-link{
+      margin-bottom: 2em;
+      text-align: center;
+    }
+    .portfolio-resume-link{
+      font-size:15px;
+    }
   }
-  

@@ -44,7 +44,7 @@ const Portfolio = () => {
                   alt="Caner Kuyucu Resume"
                   className="portfolio-link-icon"
                 />{" "}
-                Resume
+                CV
               </a>
               <Link
                 to="https://www.linkedin.com/in/caner-kuyucu/"
@@ -72,7 +72,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="portfolio-card">
+        <div className="portfolio-card-reverse">
           <div className="portfolio-box-reverse">
             <h2 className="portfolio-name-reverse">Müfit ŞAKIR</h2>
             <h3 className="portfolio-job">Web Developer</h3>
@@ -163,7 +163,7 @@ const Portfolio = () => {
                   alt="Dağhan Yazgan Resume"
                   className="portfolio-link-icon"
                 />
-                Resume
+                CV
               </a>
 
               <Link
