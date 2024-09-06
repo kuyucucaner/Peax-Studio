@@ -7,7 +7,6 @@ import Product from './pages/product'
 import Portfolio from './pages/portfolio'
 import Skill from './pages/skill'
 import './styles/scroll-bar.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
