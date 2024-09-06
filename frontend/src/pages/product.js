@@ -1,12 +1,14 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../styles/product.css";
+import FadeIn from "../components/fade-in";
 
 function Product() {
   return (
-    <section className="product-section" id="product-section">
-      <h1 className="product-title">What We Can Do for You</h1>
-      <Carousel fade interval={3000} className="carousel-section">
+    <section className="product-section" >
+      <FadeIn direction="up">
+      <h1 className="product-title" id="product-section">What We Can Do for You</h1>
+      <Carousel fade interval={3000} className="carousel-section" >
         <Carousel.Item className="carousel-blog-site">
           <div className="carousel-image">
             <h2 className="carousel-title">Personal Blog Sites</h2>
@@ -261,6 +263,7 @@ function Product() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      </FadeIn>
     </section>
   );
 }

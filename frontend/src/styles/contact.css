@@ -4,9 +4,9 @@
   justify-content: center;
 background-color: #1e1e1e;
   padding: 2em;
-  animation: fadeIn 1s ease-in-out;
   width: 90%;
   margin: auto;
+  overflow: hidden;
 }
 
 .contact-heading {
@@ -80,17 +80,7 @@ background-color: #1e1e1e;
 
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
   /* Masaüstü Cihazlar için Responsive Ayarlar */
   @media screen and (max-width: 769px) {

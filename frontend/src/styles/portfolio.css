@@ -3,9 +3,9 @@
   flex-direction: column;
   margin-top: 5em;
   margin-bottom: 5em;
-  animation: fadeIn 1.2s ease-in-out;
   background-color: #1e1e1e;
   padding-top: 2em;
+  overflow: hidden;
 }
 .portfolio-title {
   text-align: center;
@@ -16,7 +16,6 @@
   margin: auto;
   color: #f1f1f1;
   text-shadow: 1px 1px 2px #ffffff;
-  animation: fadeIn 1.2s ease-in-out;
 }
 .portfolio-section {
   display: flex;
@@ -27,22 +26,22 @@
 .portfolio-card ,.portfolio-card-reverse {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 85%;
   padding: 20px;
   margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio-box {
   display: flex;
   flex-direction: column;
   padding-left: 4em;
-  animation: fadeIn 1.5s ease-in-out;
 }
 .portfolio-box-reverse{
   display: flex;
   flex-direction: column;
   padding-right: 4em;
-  animation: fadeIn 1.5s ease-in-out;
   align-items: end;
 }
 .portfolio-photo {
@@ -50,14 +49,12 @@
   max-width: 400px;
   height: 100%;
   max-height: 400px;
-  animation: fadeIn 1.5s ease-in-out;
   border-radius: 8px;
 }
 .portfolio-name {
   font-size: 32px;
   text-shadow: 1px 1px 1px #ffffff40;
   color: #f1f1f1;
-  animation: fadeIn 1.8s ease-in-out;
   border-bottom: 1px solid #ffffff40;
   width: 35%;
 }
@@ -65,7 +62,6 @@
   font-size: 32px;
   text-shadow: 1px 1px 1px #ffffff40;
   color: #f1f1f1;
-  animation: fadeIn 1.8s ease-in-out;
   border-bottom: 1px solid #ffffff40;
   width: 35%;
   text-align: end;
@@ -75,7 +71,6 @@
   margin-top: 0;
   color: #ffffff;
   text-shadow: 0px 1px 1px #eeeeee50;
-  animation: fadeIn 1.8s ease-in-out;
 }
 .portfolio-information {
   color: #d4d4d4;

@@ -35,9 +35,13 @@ import Postman from "../images/skills/postman.svg";
 import Swagger from "../images/skills/swagger.svg";
 import VsCode from "../images/skills/vscode.svg";
 import Xcode from "../images/skills/xcode.svg";
+
+import FadeIn from "../components/fade-in";
+
 const Skill = () => {
   return (
     <section className="skill-section" id="skill-section">
+        <FadeIn direction="up">
       <div className="skill-box">
         <h1 className="skill-title">Programming Languages</h1>
         <p className="skill-icon-text">
@@ -70,8 +74,8 @@ const Skill = () => {
           </div>
         </div>
       </div>
-
-
+      </FadeIn>
+      <FadeIn direction="up">
       <div className="skill-box">
         <h1 className="skill-title">Frameworks & Libraries</h1>
         <p className="skill-icon-text">
@@ -120,6 +124,8 @@ const Skill = () => {
           </div>
         </div>
       </div>
+      </FadeIn>
+      <FadeIn direction="up">
       <div className="skill-box">
         <h1 className="skill-title">Databases</h1>
         <p className="skill-icon-text">
@@ -144,6 +150,8 @@ const Skill = () => {
           </div>
         </div>
       </div>
+      </FadeIn>
+      <FadeIn direction="up">
       <div className="skill-box">
         <h1 className="skill-title">Development Tools</h1>
         <p className="skill-icon-text">
@@ -193,6 +201,7 @@ const Skill = () => {
           </div>
         </div>
       </div>
+      </FadeIn>
     </section>
   );
 };

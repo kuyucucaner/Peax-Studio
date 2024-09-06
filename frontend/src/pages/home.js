@@ -4,6 +4,7 @@ import HomeImage from "../images/home/peaxstudio.svg";
 import GmailImage from "../images/contact/gmail.png";
 import { toast } from "react-toastify";
 import BurgerMenu from "../components/burger-menu";
+import FadeIn from "../components/fade-in";
 
 const Home = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -101,6 +102,7 @@ const Home = () => {
 
   return (
     <section className="home">
+      <FadeIn direction="up">
       <BurgerMenu />
       <div className="home-button-container">
         <button
@@ -153,6 +155,7 @@ const Home = () => {
           <p className="home-section-subtext">Learn More About Us...</p>
         </div>
       </div>
+      </FadeIn>
 
       {showScrollButton && isScrolling && (
         <div className="scroll-buttons-container">

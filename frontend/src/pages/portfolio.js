@@ -7,17 +7,22 @@ import DağhanImage from "../images/portfolio/dağhan.jpeg";
 import ResumeImage from "../images/portfolio/resume.png";
 import LinkedinImage from "../images/portfolio/linkedin.png";
 import GithubImage from "../images/portfolio/github.png";
+import FadeIn from "../components/fade-in";
 
 const Portfolio = () => {
   return (
-    <section className="portfolio-container" id="portfolio-container">
-      <h1 className="portfolio-title">Meet Our Team</h1>
-      <div className="portfolio-section">
+    <section className="portfolio-container" >
+      <FadeIn direction="up">
+      <h1 className="portfolio-title" id="portfolio-container">Meet Our Team</h1>
+      </FadeIn>
+      <div className="portfolio-section" >
+      <FadeIn direction="left">
         <div className="portfolio-card">
           <img
             src={CanerImage}
             alt="Taha Caner Kuyucu"
             className="portfolio-photo"
+            
           />
           <div className="portfolio-box">
             <h2 className="portfolio-name">Caner KUYUCU</h2>
@@ -71,7 +76,8 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-
+        </FadeIn>
+        <FadeIn direction="right">
         <div className="portfolio-card-reverse">
           <div className="portfolio-box-reverse">
             <h2 className="portfolio-name-reverse">Müfit ŞAKIR</h2>
@@ -131,7 +137,8 @@ const Portfolio = () => {
             className="portfolio-photo"
           />
         </div>
-
+        </FadeIn>
+        <FadeIn direction="left">
         <div className="portfolio-card">
           <img
             src={DağhanImage}
@@ -187,6 +194,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
+        </FadeIn>
       </div>
     </section>
   );

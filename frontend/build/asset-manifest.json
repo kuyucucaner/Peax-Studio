@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a22a8578.css",
-    "main.js": "/static/js/main.c22678a8.js",
+    "main.css": "/static/css/main.861c8ef0.css",
+    "main.js": "/static/js/main.2dd4ad08.js",
     "static/media/about.mp4": "/static/media/about.fe2e4aadd36f3413a726.mp4",
     "static/media/müfit.jpeg": "/static/media/müfit.d2c9da27d28f6bf7445a.jpeg",
     "static/media/forum.jpeg": "/static/media/forum.ba626c64e8056612624e.jpeg",
@@ -59,11 +59,11 @@
     "static/media/git.svg": "/static/media/git.c08353563539c6459b353f29d8dd7bf2.svg",
     "static/media/flutter.svg": "/static/media/flutter.5be541dd37acf42d0d53cc72fd48362c.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.15f0337078f13db400acab3639711ec7.svg",
-    "main.a22a8578.css.map": "/static/css/main.a22a8578.css.map",
-    "main.c22678a8.js.map": "/static/js/main.c22678a8.js.map"
+    "main.861c8ef0.css.map": "/static/css/main.861c8ef0.css.map",
+    "main.2dd4ad08.js.map": "/static/js/main.2dd4ad08.js.map"
   },
   "entrypoints": [
-    "static/css/main.a22a8578.css",
-    "static/js/main.c22678a8.js"
+    "static/css/main.861c8ef0.css",
+    "static/js/main.2dd4ad08.js"
   ]
 }

@@ -1,9 +1,8 @@
 .about-section {
   display: flex;
   flex-direction: column;
-  animation: fadeIn 1s ease-in-out;
   background: linear-gradient(to bottom,#020202 ,#090909, #1e1e1e);
-  overflow-x: hidden;
+  overflow: hidden;
   padding-top: 2em;
 }
 .about-box {
@@ -20,7 +19,6 @@
   position: relative;
   width: 100%;
   margin-top: 4em;
-  animation: fadeIn 1s ease-in-out;
 }
 .video-container {
   position: relative;
@@ -28,11 +26,13 @@
 
 .about-video {
   width: 100%;
-  height: 95vh;
-  border: none;
+  height: 100vh;
   object-fit: cover;
-  pointer-events: none;
+  border: none;
+  pointer-events: none; /* Videoyu tıklanabilir yapmamak için */
+  z-index: -1; /* Videoyu arka planda tutmak için */
 }
+
 
 .overlay {
   flex-direction: column;
@@ -58,7 +58,7 @@
   margin-right: auto;
   color: #f5f5f5;
   text-align: start;
-  animation: fadeIn 1.2s ease-in-out;
+
 }
 .about-description-overlay{
   font-size: 22px;
@@ -69,7 +69,6 @@
   margin-left: 7em;
   margin-right: auto;
   margin-top: 2em;
-  animation: fadeIn 1.5s ease-in-out;
   text-align: start;
 } 
 b{
@@ -86,7 +85,6 @@ b{
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  animation: fadeIn 1.5s ease-in-out;
 }
 .about-achievements {
   display: flex;
@@ -122,7 +120,6 @@ b{
   margin-right: auto;
   border-radius: 5px;
   object-fit: contain;
-  animation: fadeIn 1.2s ease-in-out;
 }
 .about-subtitle {
   margin-top: 1.5em;
@@ -136,7 +133,6 @@ b{
   text-shadow: 0px 1px 2px #ffffff;
   color: #f1f1f1;
   text-align: center;
-  animation: fadeIn 1.2s ease-in-out;
 }
 @media screen and (max-width:1200px){
   .about-x {

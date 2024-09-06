@@ -1,0 +1,65 @@
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px); /* Sağdan sola kayma efekti */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Pozisyonu eski yerine getirme */
+    }
+  }
+  
+  .fade-in-right {
+    opacity: 0;
+    transform: translateX(100px); /* Başlangıçta içerik sağda ve görünmez */
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  }
+  
+  .fade-in-visible-right {
+    opacity: 1;
+    transform: translateX(0); /* Görünür olduğunda pozisyon normale döner */
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px); /* Soldan sağa kayma efekti */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Pozisyonu eski yerine getirme */
+    }
+  }
+  
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-100px); /* Başlangıçta içerik solda ve görünmez */
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  }
+  
+  .fade-in-visible-left {
+    opacity: 1;
+    transform: translateX(0); /* Görünür olduğunda pozisyon normale döner */
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px); /* Aşağıdan yukarı kayma efekti */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Pozisyonu eski yerine getirme */
+    }
+  }
+  
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(100px); /* Başlangıçta içerik aşağıda ve görünmez */
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  }
+  
+  .fade-in-visible-up {
+    opacity: 1;
+    transform: translateY(0); /* Görünür olduğunda pozisyon normale döner */
+  }
+  

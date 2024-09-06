@@ -4,9 +4,13 @@ import { Link } from "react-router-dom";
 import GmailImage from "../images/contact/gmail.png";
 import InstagramImage from "../images/contact/instagram.png";
 import LinkedinImage from "../images/contact/linkedin.svg";
+import FadeIn from "../components/fade-in";
+
 const Contact = () => {
   return (
     <section className="contact-section" id="contact-section">
+              <FadeIn direction="up">
+
       <h2 className="contact-heading">Contact Us</h2>
       <p className="contact-text">
         We are always open to discussing new projects, creative ideas, or
@@ -67,6 +71,7 @@ const Contact = () => {
           </Link>
         </div>
       </div>
+      </FadeIn>
     </section>
   );
 };
