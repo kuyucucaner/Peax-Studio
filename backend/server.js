@@ -11,40 +11,25 @@ const app = express();
 
 // Orta katmanlar (middlewares)
 app.use(express.json());
-const allowedOrigins = [
-  'https://peaxstudio-17bab99340d9.herokuapp.com', // Canlı frontend URL
-  'http://localhost:3000' // Geliştirme frontend URL
-];
-
 app.use(cors({
-  origin: function(origin, callback) {
-    // Origin listesinde yer alıyorsa izin ver
-    if (allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  }
+  origin: ['https://peaxstudio-17bab99340d9.herokuapp.com', 'http://localhost:3000'], // Canlı ve yerel URL'leri ekleyin
 }));
+
 
 app.use(helmet({
   contentSecurityPolicy: {
     directives: {
-      defaultSrc: ["'self'"], // Varsayılan kaynaklar sadece kendi domain
-      connectSrc: ["'self'", "https://peaxstudio-17bab99340d9.herokuapp.com", "http://localhost:5000"], // API istekleri için izin verilen kaynaklar
-      scriptSrc: ["'self'", "https://cdnjs.cloudflare.com"], // Script kaynakları
-      styleSrc: ["'self'", "https://fonts.googleapis.com"], // Stil kaynakları
-      fontSrc: ["'self'", "https://fonts.gstatic.com"], // Font kaynakları
+      defaultSrc: ["'self'"],
+      connectSrc: ["'self'", "https://peaxstudio-17bab99340d9.herokuapp.com", "http://localhost:5000"], // API istekleri için doğru URL'ler
     },
   },
 }));
-app.use((req, res, next) => {
-  res.setHeader("Content-Security-Policy", "default-src 'self'; connect-src 'self' https://peaxstudio-17bab99340d9.herokuapp.com http://localhost:5000; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;");
-  next();
-});
-
 app.use(morgan('tiny'));
 app.use(bodyParser.json());
+app.use((req, res, next) => {
+  res.setHeader("Content-Security-Policy", "default-src 'self'; connect-src 'self' https://peaxstudio-17bab99340d9.herokuapp.com;"); // İstek yapılan kaynağa göre düzenleyin
+  next();
+});
 app.use('/api/mail', mailRoutes);
 
 // Frontend build klasörünü backend üzerinden sunma
