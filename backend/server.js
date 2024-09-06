@@ -20,13 +20,10 @@ app.use(helmet({
     directives: {
       defaultSrc: ["'self'"],
       connectSrc: ["'self'", "https://peaxstudio-17bab99340d9.herokuapp.com", "http://localhost:5000"], // Allow local backend
-      scriptSrc: ["'self'", "https://cdnjs.cloudflare.com"],
-      styleSrc: ["'self'", "https://fonts.googleapis.com", "https://stackpath.bootstrapcdn.com"],
-      imgSrc: ["'self'", "data:"],
-      fontSrc: ["'self'", "https://fonts.gstatic.com"], // Add the URL for font sources
     },
   },
 }));
+
 
 
 app.use((req, res, next) => {
