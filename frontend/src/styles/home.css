@@ -10,7 +10,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Bu, elementlerin boyutlarını kontrol etmek için faydalıdır */
-
 }
 
 main{
@@ -32,7 +31,6 @@ main{
   justify-content: center;
   align-items: center;
     padding: 10px; /* Adjust padding as needed */
-    overflow: hidden;
 
 }
 
@@ -181,12 +179,6 @@ main{
   object-fit: contain;
 }
 
-
-
-.home-section-title,
-.home-section-subtitle {
-  opacity: 0;
-}
 
 html {
   scroll-behavior: smooth;

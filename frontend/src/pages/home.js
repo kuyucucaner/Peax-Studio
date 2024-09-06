@@ -102,8 +102,10 @@ const Home = () => {
 
   return (
     <section className="home">
-      <FadeIn direction="up">
+   
       <BurgerMenu />
+      <FadeIn direction="up">
+
       <div className="home-button-container">
         <button
           className="home-button"
