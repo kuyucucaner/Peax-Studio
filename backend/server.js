@@ -15,22 +15,23 @@ app.use(cors({
   origin: ['https://peaxstudio-17bab99340d9.herokuapp.com', 'http://localhost:3000'], // Canlı ve yerel URL'leri ekleyin
 }));
 
+const helmet = require('helmet');
+
+
 app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
       connectSrc: ["'self'", "https://peaxstudio-17bab99340d9.herokuapp.com", "http://localhost:5000"], // Allow local backend
+      scriptSrc: ["'self'", "https://cdnjs.cloudflare.com"],
+      styleSrc: ["'self'", "https://fonts.googleapis.com", "https://stackpath.bootstrapcdn.com"],
+      imgSrc: ["'self'", "data:"],
+      fontSrc: ["'self'", "https://fonts.gstatic.com"],
     },
   },
 }));
 
 
-
-app.use((req, res, next) => {
-  res.setHeader("Content-Security-Policy", 
-    "default-src 'self'; connect-src 'self' https://peaxstudio-17bab99340d9.herokuapp.com http://localhost:5000; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;");
-  next();
-});
 
 app.use(morgan('tiny'));
 app.use(bodyParser.json());
