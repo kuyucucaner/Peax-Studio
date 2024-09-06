@@ -77,9 +77,12 @@
         width: 90%;
     }
   }
-  @media screen and  (max-width: 3900px) {
+  @media screen and  (max-width: 390px) {
     .skill-title{
-        width: 100%;
+        width: 90%;
         font-size: 2rem;
+    }
+    .skill-icon-text{
+        width: 90%;
     }
   }

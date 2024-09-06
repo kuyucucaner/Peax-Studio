@@ -97,5 +97,14 @@ background-color: #1e1e1e;
     .contact-info{
       flex-direction: column;
     }
+    .social-heading{
+      width: 80%;
+    }
+    .contact-info-item{
+      margin-bottom: 10px;
+    }
+    .contact-info{
+      align-items: center;
+    }
   }
   
