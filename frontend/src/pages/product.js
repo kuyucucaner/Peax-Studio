@@ -8,7 +8,6 @@ function Product() {
       <h1 className="product-title">What We Can Do for You</h1>
       <Carousel fade interval={3000} className="carousel-section">
         <Carousel.Item className="carousel-blog-site">
-          
           <div className="carousel-image">
             <h2 className="carousel-title">Personal Blog Sites</h2>
           </div>
@@ -30,6 +29,28 @@ function Product() {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
+        <Carousel.Item className="carousel-mobile-app">
+          <div className="carousel-image">
+            <h2 className="carousel-title">Mobile Application</h2>
+          </div>
+          <Carousel.Caption>
+            <h3>
+              Strengthen Your Digital Presence with Our Mobile App Solutions
+            </h3>
+            <p>
+              Maximize your online presence and bring your brand to the mobile
+              world. Our expert team specializes in designing and developing
+              user-friendly, engagement-driven mobile apps that reflect your
+              brand’s unique identity. Whether you're looking to grow your
+              business or build stronger connections with your customers, our
+              apps feature seamless navigation, modern design, and powerful
+              functionality. Let us help you transform your ideas into a
+              competitive mobile platform that stands out in today’s fast-paced
+              digital landscape.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+
         <Carousel.Item className="carousel-corporate-site">
           <div className="carousel-image">
             <h2 className="carousel-title">Corporate Websites</h2>

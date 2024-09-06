@@ -73,7 +73,7 @@ const Skill = () => {
 
 
       <div className="skill-box">
-        <h1 className="skill-title">Frameworks/Libraries</h1>
+        <h1 className="skill-title">Frameworks & Libraries</h1>
         <p className="skill-icon-text">
           this is our known Frameworks and Libraries
         </p>

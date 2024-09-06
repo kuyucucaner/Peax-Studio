@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.692bc822.css",
-    "main.js": "/static/js/main.64eb2169.js",
+    "main.css": "/static/css/main.dd0f083e.css",
+    "main.js": "/static/js/main.65005bed.js",
     "static/media/about.mp4": "/static/media/about.fe2e4aadd36f3413a726.mp4",
     "static/media/müfit.jpeg": "/static/media/müfit.d2c9da27d28f6bf7445a.jpeg",
     "static/media/forum.jpeg": "/static/media/forum.ba626c64e8056612624e.jpeg",
+    "static/media/mobile.jpeg": "/static/media/mobile.4741e275a24dc67b3270.jpeg",
     "static/media/personal-blog.jpeg": "/static/media/personal-blog.e419f612d9f13fdf8020.jpeg",
     "static/media/value.jpg": "/static/media/value.dd3b7cfcf7e7db94b2ca.jpg",
     "static/media/vision.jpeg": "/static/media/vision.d98b8b7240252c6e6741.jpeg",
@@ -58,11 +59,11 @@
     "static/media/git.svg": "/static/media/git.c08353563539c6459b353f29d8dd7bf2.svg",
     "static/media/flutter.svg": "/static/media/flutter.5be541dd37acf42d0d53cc72fd48362c.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.15f0337078f13db400acab3639711ec7.svg",
-    "main.692bc822.css.map": "/static/css/main.692bc822.css.map",
-    "main.64eb2169.js.map": "/static/js/main.64eb2169.js.map"
+    "main.dd0f083e.css.map": "/static/css/main.dd0f083e.css.map",
+    "main.65005bed.js.map": "/static/js/main.65005bed.js.map"
   },
   "entrypoints": [
-    "static/css/main.692bc822.css",
-    "static/js/main.64eb2169.js"
+    "static/css/main.dd0f083e.css",
+    "static/js/main.65005bed.js"
   ]
 }

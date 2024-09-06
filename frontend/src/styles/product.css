@@ -28,7 +28,8 @@
 .carousel-cv-site,
 .carousel-travel-site,
 .carousel-magazine-site,
-.carousel-fitness-site {
+.carousel-fitness-site,
+.carousel-mobile-app {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,6 +42,9 @@
   padding: 20px;
   z-index: 1;
   height: 600px; /* Örneğin, bu değeri ihtiyacınıza göre ayarlayın */
+}
+.carousel-mobile-app{
+  background: url(../images/products/mobile.jpeg);
 }
 .carousel-blog-site {
   background-image: url(../images/products/personal-blog.jpeg);
@@ -88,7 +92,8 @@
 .carousel-cv-site::before,
 .carousel-travel-site::before,
 .carousel-magazine-site::before,
-.carousel-fitness-site::before {
+.carousel-fitness-site::before,
+.carousel-mobile-app::before {
   content: "";
   position: absolute;
   top: 0;
@@ -186,7 +191,8 @@
   .carousel-cv-site,
   .carousel-travel-site,
   .carousel-magazine-site,
-  .carousel-fitness-site {
+  .carousel-fitness-site,
+  .carousel-mobile-app {
 
     height: 800px; /* Örneğin, bu değeri ihtiyacınıza göre ayarlayın */
   }
@@ -202,7 +208,8 @@
   .carousel-cv-site,
   .carousel-travel-site,
   .carousel-magazine-site,
-  .carousel-fitness-site {
+  .carousel-fitness-site,
+  .carousel-mobile-app {
 
     height: 1000px; /* Örneğin, bu değeri ihtiyacınıza göre ayarlayın */
   }

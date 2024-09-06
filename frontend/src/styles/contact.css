@@ -93,7 +93,7 @@ background-color: #1e1e1e;
 }
 
   /* Masaüstü Cihazlar için Responsive Ayarlar */
-  @media (max-width: 769px) {
+  @media screen and (max-width: 769px) {
     .contact-info{
       flex-direction: column;
     }
