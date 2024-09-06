@@ -194,6 +194,9 @@
      
       font-size:32px;
     }
+    .portfolio-name , .portfolio-name-reverse{
+      width: 80%;
+    }
     .portfolio-github-link, .portfolio-linkedin-link ,.portfolio-resume-link{
       margin-bottom: 2em;
       text-align: center;
