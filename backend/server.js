@@ -11,12 +11,24 @@ const app = express();
 
 // Orta katmanlar (middlewares)
 app.use(express.json());
-app.use(cors());
-app.use(helmet());
+app.use(cors({
+  origin: 'http://localhost:3000', // Geliştirme sırasında frontend URL
+}));
+
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      connectSrc: ["'self'", "http://localhost:5000"], // API istekleri için gerekli
+    },
+  },
+}));
 app.use(morgan('tiny'));
 app.use(bodyParser.json());
-
-
+app.use((req, res, next) => {
+  res.setHeader("Content-Security-Policy", "default-src 'self'; connect-src 'self' http://localhost:5000;"); // İstek yapılan kaynağa göre düzenleyin
+  next();
+});
 app.use('/api/mail', mailRoutes);
 
 // Frontend build klasörünü backend üzerinden sunma
