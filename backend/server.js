@@ -31,7 +31,7 @@ app.use(helmet({
 }));
 app.use((req, res, next) => {
   if (req.hostname === 'peaxstudio.com') {
-    return res.redirect(301, 'https://www.peaxstudio.com' + req.url);
+    return res.redirect(301, 'http://www.peaxstudio.com' + req.url);
   }
   next();
 });
