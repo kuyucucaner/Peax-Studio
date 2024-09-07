@@ -16,7 +16,7 @@ main{
   background-color: #1e1e1e;
 }
 .home {
-  background: url(../images/home/home.jpg);
+  background: url(../images/home/home.webp);
   background-position: center;
   background-size: cover; /* Ensure the image covers the entire section */
   background-repeat: no-repeat; /* Prevent the image from repeating */

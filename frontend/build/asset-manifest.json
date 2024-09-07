@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b2a364c.css",
+    "main.css": "/static/css/main.8c51ec45.css",
     "main.js": "/static/js/main.eeb7f15a.js",
     "static/media/about.mp4": "/static/media/about.fe2e4aadd36f3413a726.mp4",
     "static/media/müfit.jpeg": "/static/media/müfit.d2c9da27d28f6bf7445a.jpeg",
@@ -15,11 +15,11 @@
     "static/media/magazine.jpeg": "/static/media/magazine.e60838d11dafe7f609f4.jpeg",
     "static/media/service-reservation.jpeg": "/static/media/service-reservation.0c424f47fff8a198ba73.jpeg",
     "static/media/landing.jpeg": "/static/media/landing.8a6d392e0b767ecb65f2.jpeg",
-    "static/media/home.jpg": "/static/media/home.6180755cfa084e87ea94.jpg",
     "static/media/corporate.jpeg": "/static/media/corporate.72403542c733ecded5cd.jpeg",
     "static/media/mission.png": "/static/media/mission.7b15605e0748c94c988d.png",
     "static/media/health-fitness.jpeg": "/static/media/health-fitness.8cc87a28f1fe59d99089.jpeg",
     "static/media/e-commerce.jpeg": "/static/media/e-commerce.113ca258fc031d4a2114.jpeg",
+    "static/media/home.webp": "/static/media/home.d428ee376c68f3a8a1d8.webp",
     "static/media/api.png": "/static/media/api.7531e8d070312facc530.png",
     "static/media/caner.jpeg": "/static/media/caner.811b37a0bbfa3cc4329e.jpeg",
     "static/media/react.png": "/static/media/react.86c8d9eba03e29814d2a.png",
@@ -59,11 +59,11 @@
     "static/media/git.svg": "/static/media/git.c08353563539c6459b353f29d8dd7bf2.svg",
     "static/media/flutter.svg": "/static/media/flutter.5be541dd37acf42d0d53cc72fd48362c.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.15f0337078f13db400acab3639711ec7.svg",
-    "main.5b2a364c.css.map": "/static/css/main.5b2a364c.css.map",
+    "main.8c51ec45.css.map": "/static/css/main.8c51ec45.css.map",
     "main.eeb7f15a.js.map": "/static/js/main.eeb7f15a.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b2a364c.css",
+    "static/css/main.8c51ec45.css",
     "static/js/main.eeb7f15a.js"
   ]
 }
