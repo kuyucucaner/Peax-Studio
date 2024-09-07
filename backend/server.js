@@ -13,8 +13,16 @@ const app = express();
 // Orta katmanlar (middlewares)
 app.use(express.json());
 app.use(cors({
-  origin: ['https://peaxstudio-17bab99340d9.herokuapp.com', 'https://www.peaxstudio.com', 'http://localhost:3000' , 'http://www.peaxstudio.com'], // Güncellenmiş URL'ler
+  origin: [
+    'https://peaxstudio-17bab99340d9.herokuapp.com',
+    'https://www.peaxstudio.com',
+    'http://localhost:3000',
+    'http://www.peaxstudio.com',
+    '*'
+  ],
+  credentials: true,  // Ensure this is enabled if you're using cookies for authentication
 }));
+
 
 
 app.use(helmet({
