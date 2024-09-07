@@ -34,16 +34,6 @@ app.use(helmet({
     },
   },
 }));
-// HTTP'den HTTPS'ye yönlendirme
-app.use((req, res, next) => {
-  if (req.protocol === 'http') {
-    return res.redirect(301, `https://${req.hostname}${req.url}`);
-  }
-  next();
-});
-
-app.set('trust proxy', 1);
-
 
 app.use(morgan('tiny'));
 app.use(bodyParser.json());
