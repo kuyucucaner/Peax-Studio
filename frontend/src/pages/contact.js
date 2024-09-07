@@ -36,6 +36,8 @@ const Contact = () => {
               src={GmailImage}
               alt="Peax Studio Gmail"
               className="contact-icon"
+              title="Contact Peax Studio via Gmail"
+
             />
             peaxstudio@gmail.com
           </Link>
@@ -51,6 +53,8 @@ const Contact = () => {
               src={LinkedinImage}
               alt="Peax Studio Linkedin"
               className="contact-icon"
+              title="Contact Peax Studio via LinkedIn"
+
             />
             peaxstudio
           </Link>
@@ -66,6 +70,8 @@ const Contact = () => {
               src={InstagramImage}
               alt="Peax Studio Instagram"
               className="contact-icon"
+              title="Contact Peax Studio via Instagram"
+
             />
             peaxstudio
           </Link>

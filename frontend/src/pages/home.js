@@ -197,17 +197,23 @@ const Home = () => {
                   name="email"
                   placeholder="Email*"
                   required
+                  disabled={isSubmitting}  // Gönderim sırasında disable edilir
+
                 />
                 <input
                   type="text"
                   name="subject"
                   placeholder="Subject*"
                   required
+                  disabled={isSubmitting}  // Gönderim sırasında disable edilir
+
                 />
                 <textarea
                   name="message"
                   placeholder="Message*"
                   required
+                  disabled={isSubmitting}  // Gönderim sırasında disable edilir
+
                 ></textarea>
                 <button type="submit" disabled={isSubmitting}>
                   {isSubmitting ? "Sending..." : "Send"}{" "}

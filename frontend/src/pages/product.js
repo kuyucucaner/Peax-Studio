@@ -8,8 +8,8 @@ function Product() {
     <section className="product-section" >
       <FadeIn direction="up">
       <h1 className="product-title" id="product-section">What We Can Do for You</h1>
-      <Carousel fade interval={3000} className="carousel-section" >
-        <Carousel.Item className="carousel-blog-site">
+      <Carousel pause="hover" fade interval={3000} className="carousel-section" >
+        <Carousel.Item c1lassName="carousel-blog-site">
           <div className="carousel-image">
             <h2 className="carousel-title">Personal Blog Sites</h2>
           </div>
