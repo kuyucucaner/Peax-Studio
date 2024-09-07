@@ -13,7 +13,12 @@ const app = express();
 // Orta katmanlar (middlewares)
 app.use(express.json());
 app.use(cors({
-  origin: ['https://peaxstudio-17bab99340d9.herokuapp.com', 'https://www.peaxstudio.com', 'http://localhost:3000' , 'http://www.peaxstudio.com'], // Güncellenmiş URL'ler
+  origin: [
+    'https://peaxstudio-17bab99340d9.herokuapp.com',
+    'https://www.peaxstudio.com',
+    'http://localhost:3000',
+    'http://www.peaxstudio.com'
+  ],
 }));
 
 
@@ -21,7 +26,7 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
-      connectSrc: ["'self'", "https://peaxstudio-17bab99340d9.herokuapp.com", "https://www.peaxstudio.com", "http://localhost:5000", "http://www.peaxstudio.com"], // Güncellenmiş URL'ler
+      connectSrc: ["'self'", "https://peaxstudio-17bab99340d9.herokuapp.com", "https://www.peaxstudio.com", "http://localhost:5000"], // Güncellenmiş URL'ler
       scriptSrc: ["'self'", "https://cdnjs.cloudflare.com"],
       styleSrc: ["'self'", "https://fonts.googleapis.com", "https://stackpath.bootstrapcdn.com"],
       imgSrc: ["'self'", "data:"],
@@ -29,12 +34,14 @@ app.use(helmet({
     },
   },
 }));
+// HTTP'den HTTPS'ye yönlendirme
 app.use((req, res, next) => {
-  if (req.hostname === 'peaxstudio.com') {
-    return res.redirect(301, 'http://www.peaxstudio.com' + req.url);
+  if (req.protocol === 'http') {
+    return res.redirect(301, `https://${req.hostname}${req.url}`);
   }
   next();
 });
+
 app.set('trust proxy', 1);
 
 
