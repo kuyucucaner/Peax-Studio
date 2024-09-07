@@ -29,6 +29,13 @@ app.use(helmet({
     },
   },
 }));
+app.use((req, res, next) => {
+  if (req.hostname === 'peaxstudio.com') {
+    return res.redirect(301, 'https://www.peaxstudio.com' + req.url);
+  }
+  next();
+});
+app.set('trust proxy', 1);
 
 
 app.use(morgan('tiny'));
