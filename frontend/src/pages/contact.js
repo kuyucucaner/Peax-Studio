@@ -45,7 +45,7 @@ const Contact = () => {
         <div className="contact-info-item">
           <Link
             className="contact-anchor"
-            to="https://www.linkedin.com/in/peaxstudio"
+            to="https://www.linkedin.com/in/peax-studio-94719b323/"
             target="_blank"
             aria-label="Peax Studio LinkedIn Profile"
           >
