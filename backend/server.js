@@ -13,7 +13,7 @@ const app = express();
 // Orta katmanlar (middlewares)
 app.use(express.json());
 app.use(cors({
-  origin: ['https://peaxstudio-17bab99340d9.herokuapp.com', 'http://localhost:3000' , 'http://www.peaxstudio.com'], // Güncellenmiş URL'ler
+  origin: ['https://peaxstudio-17bab99340d9.herokuapp.com', 'https://www.peaxstudio.com', 'http://localhost:3000' , 'http://www.peaxstudio.com'], // Güncellenmiş URL'ler
 }));
 
 
@@ -21,7 +21,7 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
-      connectSrc: ["'self'", "https://peaxstudio-17bab99340d9.herokuapp.com",  "http://localhost:5000" , "http://www.peaxstudio.com"], // Güncellenmiş URL'ler
+      connectSrc: ["'self'", "https://peaxstudio-17bab99340d9.herokuapp.com", "https://www.peaxstudio.com", "http://localhost:5000", "http://www.peaxstudio.com"], // Güncellenmiş URL'ler
       scriptSrc: ["'self'", "https://cdnjs.cloudflare.com"],
       styleSrc: ["'self'", "https://fonts.googleapis.com", "https://stackpath.bootstrapcdn.com"],
       imgSrc: ["'self'", "data:"],
