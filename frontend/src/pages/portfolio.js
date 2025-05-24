@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/portfolio.css";
-import CanerImage from "../images/portfolio/caner.jpeg";
-import MüfitImage from "../images/portfolio/müfit.jpeg";
-import DağhanImage from "../images/portfolio/dağhan.jpeg";
+import CanerImage from "../images/portfolio/user.png";
+import MüfitImage from "../images/portfolio/user.png";
+import DağhanImage from "../images/portfolio/user.png";
 import ResumeImage from "../images/portfolio/resume.png";
 import LinkedinImage from "../images/portfolio/linkedin.png";
 import GithubImage from "../images/portfolio/github.png";
@@ -22,14 +22,14 @@ const Portfolio = () => {
           <div className="portfolio-card">
             <img
               src={CanerImage}
-              alt="Taha Caner Kuyucu"
+              alt="Taha XXXXXXXXXX"
               className="portfolio-photo"
             />
             <div className="portfolio-box">
-              <h2 className="portfolio-name">Caner KUYUCU</h2>
+              <h2 className="portfolio-name">XXXXXXXXXX</h2>
               <h3 className="portfolio-job">Full Stack Developer</h3>
               <p className="portfolio-information">
-                Caner Kuyucu is an enthusiastic and dynamic Full Stack Developer
+                XXXXXXXXXX is an enthusiastic and dynamic Full Stack Developer
                 with a fresh perspective on both front-end and back-end
                 development. Skilled in modern technologies such as HTML, CSS,
                 JavaScript, and React, he excels in creating user-friendly and
@@ -48,7 +48,7 @@ const Portfolio = () => {
                 >
                   <img
                     src={ResumeImage}
-                    alt="Caner Kuyucu Resume"
+                    alt="XXXXXXXXXX Resume"
                     className="portfolio-link-icon"
                   />{" "}
                   CV
@@ -60,7 +60,7 @@ const Portfolio = () => {
                 >
                   <img
                     src={LinkedinImage}
-                    alt="Caner Kuyucu Linkedin"
+                    alt="XXXXXXXXXX Linkedin"
                     className="portfolio-link-icon"
                   />
                 </Link>
@@ -71,7 +71,7 @@ const Portfolio = () => {
                 >
                   <img
                     src={GithubImage}
-                    alt="Caner Kuyucu Github"
+                    alt="XXXXXXXXXX Github"
                     className="portfolio-link-icon"
                   />
                 </Link>
@@ -82,10 +82,10 @@ const Portfolio = () => {
         <FadeIn direction="right">
           <div className="portfolio-card-reverse">
             <div className="portfolio-box-reverse">
-              <h2 className="portfolio-name-reverse">Müfit ŞAKIR</h2>
+              <h2 className="portfolio-name-reverse">XXXXXXXXXX</h2>
               <h3 className="portfolio-job">Web Developer</h3>
               <p className="portfolio-information">
-                Müfit Şakır is a talented and enthusiastic Web Developer with a
+                XXXXXXXXXX is a talented and enthusiastic Web Developer with a
                 broad knowledge of modern web technologies. His expertise in
                 HTML, CSS, and JavaScript allows him to create aesthetically
                 pleasing and functional websites. By prioritizing user
@@ -102,7 +102,7 @@ const Portfolio = () => {
                 >
                   <img
                     src={GithubImage}
-                    alt="Müfit Şakır Github"
+                    alt="XXXXXXXXXX Github"
                     className="portfolio-link-icon"
                   />
                 </Link>
@@ -113,7 +113,7 @@ const Portfolio = () => {
                 >
                   <img
                     src={LinkedinImage}
-                    alt="Müfit Şakır Linkedin"
+                    alt="XXXXXXXXXX Linkedin"
                     className="portfolio-link-icon"
                   />
                 </Link>
@@ -125,7 +125,7 @@ const Portfolio = () => {
               >
                 <img
                   src={ResumeImage}
-                  alt="Müfit Şakır Resume"
+                  alt="XXXXXXXXXX Resume"
                   className="portfolio-link-icon"
                 />{" "}
                 Resume
@@ -134,7 +134,7 @@ const Portfolio = () => {
             </div>
             <img
               src={MüfitImage}
-              alt="Taha Caner Kuyucu"
+              alt="Taha XXXXXXXXXX"
               className="portfolio-photo"
             />
           </div>
@@ -143,14 +143,14 @@ const Portfolio = () => {
           <div className="portfolio-card">
             <img
               src={DağhanImage}
-              alt="Taha Caner Kuyucu"
+              alt="Taha XXXXXXXXXX"
               className="portfolio-photo"
             />
             <div className="portfolio-box">
-              <h2 className="portfolio-name">Dağhan Yazgan</h2>
+              <h2 className="portfolio-name">XXXXXXXXXX</h2>
               <h3 className="portfolio-job">Mobile Developer</h3>
               <p className="portfolio-information">
-                Dağhan Yazgan is a promising young Mobile Developer with strong
+                XXXXXXXXXX is a promising young Mobile Developer with strong
                 expertise in Flutter and Dart technologies. He excels in
                 creating high-performance and user-friendly mobile applications.
                 Capable of developing effective and modern applications for both
@@ -167,7 +167,7 @@ const Portfolio = () => {
                 >
                   <img
                     src={ResumeImage}
-                    alt="Dağhan Yazgan Resume"
+                    alt="XXXXXXXXXX Resume"
                     className="portfolio-link-icon"
                   />
                   CV
@@ -180,14 +180,14 @@ const Portfolio = () => {
                 >
                   <img
                     src={LinkedinImage}
-                    alt="Dağhan Yazgan Linkedin"
+                    alt="XXXXXXXXXX Linkedin"
                     className="portfolio-link-icon"
                   />
                 </Link>
                 {/* <Link to="#" className="portfolio-github-link">
                 <img
                   src={GithubImage}
-                  alt="Dağhan Yazgan Github"
+                  alt="XXXXXXXXXX Github"
                   className="portfolio-link-icon"
                 />
               </Link> */}
